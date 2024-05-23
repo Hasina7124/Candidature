@@ -28,13 +28,7 @@ namespace Candidature
             if (result == DialogResult.OK)
             {
                 image.ImageLocation = openFileDialog.FileName;
-                //image_ = openFileDialog.FileName;
-
-                string dossier = "image";
-                Directory.CreateDirectory(dossier);
-
-                image_ = Path.Combine(dossier, Guid.NewGuid().ToString()+".jpg");
-                image.Image.Save(image_, System.Drawing.Imaging.ImageFormat.Jpeg);
+                image_ = openFileDialog.FileName;
             }
         }
 
