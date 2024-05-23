@@ -106,6 +106,7 @@
             this.insertion.TabIndex = 23;
             this.insertion.Text = "Inserer";
             this.insertion.UseVisualStyleBackColor = true;
+            this.insertion.Click += new System.EventHandler(this.insertion_Click);
             // 
             // politique
             // 
@@ -292,7 +293,7 @@
             this.image.Location = new System.Drawing.Point(29, 28);
             this.image.Name = "image";
             this.image.Size = new System.Drawing.Size(210, 161);
-            this.image.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.image.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.image.TabIndex = 0;
             this.image.TabStop = false;
             // 

@@ -16,5 +16,10 @@ namespace Candidature
         {
             InitializeComponent();
         }
+
+        private void insertion_Click(object sender, EventArgs e)
+        {
+            Navigation navigation = new Navigation(new InsertionCandidat(), conteneur);
+        }
     }
 }

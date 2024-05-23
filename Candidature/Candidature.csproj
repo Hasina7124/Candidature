@@ -113,7 +113,6 @@
       <DependentUpon>Mere.cs</DependentUpon>
     </Compile>
     <Compile Include="entité\Navigation.cs" />
-    <Compile Include="entité\Personne.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="InsertionCandidat.resx">
@@ -144,6 +143,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="image\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
