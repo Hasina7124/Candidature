@@ -28,20 +28,32 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.conteneur = new System.Windows.Forms.Panel();
             this.SuspendLayout();
+            // 
+            // conteneur
+            // 
+            this.conteneur.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.conteneur.Location = new System.Drawing.Point(0, 0);
+            this.conteneur.Name = "conteneur";
+            this.conteneur.Size = new System.Drawing.Size(1150, 400);
+            this.conteneur.TabIndex = 0;
             // 
             // Mere
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1150, 400);
+            this.Controls.Add(this.conteneur);
             this.Name = "Mere";
-            this.Text = "Form1";
+            this.Text = "Master";
             this.ResumeLayout(false);
 
         }
 
         #endregion
+
+        private System.Windows.Forms.Panel conteneur;
     }
 }
 
