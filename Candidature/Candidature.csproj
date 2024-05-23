@@ -106,6 +106,12 @@
     <Compile Include="InsertionCandidat.Designer.cs">
       <DependentUpon>InsertionCandidat.cs</DependentUpon>
     </Compile>
+    <Compile Include="Listecandidat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Listecandidat.Designer.cs">
+      <DependentUpon>Listecandidat.cs</DependentUpon>
+    </Compile>
     <Compile Include="Mere.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -117,6 +123,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="InsertionCandidat.resx">
       <DependentUpon>InsertionCandidat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Listecandidat.resx">
+      <DependentUpon>Listecandidat.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Mere.resx">
       <DependentUpon>Mere.cs</DependentUpon>
