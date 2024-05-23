@@ -16,5 +16,16 @@ namespace Candidature
         {
             InitializeComponent();
         }
+
+        private void parcourir_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog openFileDialog = new OpenFileDialog();
+            DialogResult result = openFileDialog.ShowDialog();
+
+            if (result == DialogResult.OK)
+            {
+
+            }
+        }
     }
 }

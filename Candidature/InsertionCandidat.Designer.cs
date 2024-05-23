@@ -285,6 +285,7 @@
             this.parcourir.TabIndex = 1;
             this.parcourir.Text = "Parcourir";
             this.parcourir.UseVisualStyleBackColor = true;
+            this.parcourir.Click += new System.EventHandler(this.parcourir_Click);
             // 
             // image
             // 
