@@ -16,7 +16,7 @@ namespace Candidature
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new InsertionCandidat());
+            Application.Run(new Mere());
         }
     }
 }
