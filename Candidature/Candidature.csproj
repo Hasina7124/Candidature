@@ -47,7 +47,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="entité\Candidats.cs" />
-    <Compile Include="Connexion.cs" />
+    <Compile Include="entité\Connexion.cs" />
     <Compile Include="InsertionCandidat.cs">
       <SubType>Form</SubType>
     </Compile>
