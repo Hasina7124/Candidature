@@ -29,11 +29,11 @@
         private void InitializeComponent()
         {
             this.conteneur = new System.Windows.Forms.Panel();
-            this.listescandidats = new System.Windows.Forms.ListBox();
-            this.label1 = new System.Windows.Forms.Label();
+            this.retour = new System.Windows.Forms.Button();
             this.suppression = new System.Windows.Forms.Button();
             this.modification = new System.Windows.Forms.Button();
-            this.retour = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.listescandidats = new System.Windows.Forms.ListBox();
             this.conteneur.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -50,24 +50,14 @@
             this.conteneur.Size = new System.Drawing.Size(1150, 400);
             this.conteneur.TabIndex = 0;
             // 
-            // listescandidats
+            // retour
             // 
-            this.listescandidats.FormattingEnabled = true;
-            this.listescandidats.ItemHeight = 16;
-            this.listescandidats.Location = new System.Drawing.Point(12, 76);
-            this.listescandidats.Name = "listescandidats";
-            this.listescandidats.Size = new System.Drawing.Size(862, 308);
-            this.listescandidats.TabIndex = 0;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Mongolian Baiti", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(442, 24);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(261, 31);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "LISTE CANDIDAT";
+            this.retour.Location = new System.Drawing.Point(953, 244);
+            this.retour.Name = "retour";
+            this.retour.Size = new System.Drawing.Size(140, 41);
+            this.retour.TabIndex = 27;
+            this.retour.Text = "Retour";
+            this.retour.UseVisualStyleBackColor = true;
             // 
             // suppression
             // 
@@ -87,14 +77,25 @@
             this.modification.Text = "Modification";
             this.modification.UseVisualStyleBackColor = true;
             // 
-            // retour
+            // label1
             // 
-            this.retour.Location = new System.Drawing.Point(953, 244);
-            this.retour.Name = "retour";
-            this.retour.Size = new System.Drawing.Size(140, 41);
-            this.retour.TabIndex = 27;
-            this.retour.Text = "Retour";
-            this.retour.UseVisualStyleBackColor = true;
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Mongolian Baiti", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(442, 24);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(261, 31);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "LISTE CANDIDAT";
+            // 
+            // listescandidats
+            // 
+            this.listescandidats.FormattingEnabled = true;
+            this.listescandidats.ItemHeight = 16;
+            this.listescandidats.Location = new System.Drawing.Point(12, 76);
+            this.listescandidats.Name = "listescandidats";
+            this.listescandidats.SelectionMode = System.Windows.Forms.SelectionMode.MultiSimple;
+            this.listescandidats.Size = new System.Drawing.Size(862, 308);
+            this.listescandidats.TabIndex = 0;
             // 
             // Listecandidat
             // 

@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             this.conteneur = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.insertion = new System.Windows.Forms.Button();
             this.listecandidat = new System.Windows.Forms.Button();
+            this.insertion = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             this.conteneur.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -46,15 +46,15 @@
             this.conteneur.Size = new System.Drawing.Size(1150, 400);
             this.conteneur.TabIndex = 0;
             // 
-            // label1
+            // listecandidat
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Mongolian Baiti", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(378, 52);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(403, 36);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "INSERTION CANDIDAT";
+            this.listecandidat.Location = new System.Drawing.Point(503, 234);
+            this.listecandidat.Name = "listecandidat";
+            this.listecandidat.Size = new System.Drawing.Size(161, 55);
+            this.listecandidat.TabIndex = 2;
+            this.listecandidat.Text = "Liste candidat";
+            this.listecandidat.UseVisualStyleBackColor = true;
+            this.listecandidat.Click += new System.EventHandler(this.listecandidat_Click);
             // 
             // insertion
             // 
@@ -66,14 +66,15 @@
             this.insertion.UseVisualStyleBackColor = true;
             this.insertion.Click += new System.EventHandler(this.insertion_Click);
             // 
-            // listecandidat
+            // label1
             // 
-            this.listecandidat.Location = new System.Drawing.Point(503, 234);
-            this.listecandidat.Name = "listecandidat";
-            this.listecandidat.Size = new System.Drawing.Size(161, 55);
-            this.listecandidat.TabIndex = 2;
-            this.listecandidat.Text = "Liste candidat";
-            this.listecandidat.UseVisualStyleBackColor = true;
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Mongolian Baiti", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(378, 52);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(388, 35);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "INSERTION CANDIDAT";
             // 
             // Mere
             // 
