@@ -18,9 +18,7 @@ namespace Candidature.entité
         {
             this.id = id;
         }
-        public Candidats()
-        {
-        }
+        public Candidats() { }
 
         //Pour l'ajout d'un candidat
         public string ajoutcandidat(string nom, string prenoms, string sexe, string lieunaissance, DateTime datenaissance,
@@ -186,6 +184,7 @@ namespace Candidature.entité
                         modification.pathimage_ = reader.GetString(0);
                         modification.nom_ = reader.GetString(1);
                         modification.prenoms_ = reader.GetString(2);
+                        modification.sexe_ = reader.GetString(3);
                         modification.lieunaissance_ = reader.GetString(4);
                         modification.datenaissance_ = reader.GetDateTime(5);
                         modification.adresse_ = reader.GetString(6);
@@ -201,5 +200,6 @@ namespace Candidature.entité
             }
             return modification;
         }
+
     }
 }

@@ -18,6 +18,7 @@ namespace Candidature
         public string pathimage_ { get; set; }
         public string nom_ { get; set; }
         public string prenoms_ { get; set; }
+        public string sexe_ { get; set; }
         public string lieunaissance_ { get; set; }
         public string adresse_ { get; set; }
         public string tel_ { get; set; }
@@ -31,6 +32,7 @@ namespace Candidature
             this.id = id;
         }
 
+        //Initialiser les champs
         public void initialization(int id)
         {
             Candidats candidats = new Candidats(id);
@@ -40,6 +42,18 @@ namespace Candidature
             string pathimage;
             pathimage = modification.pathimage_;
 
+            if(modification.sexe_ == "Mascullin")
+            {
+                mascullin.Checked = true;
+            }
+            else if(modification.sexe_ == "Feminin")
+            {
+                feminin.Checked = true;
+            }
+            else
+            {
+                autres.Checked = true;
+            }
             nom.Text = modification.nom_;
             prenom.Text = modification.prenoms_;
             lieunaissance.Text = modification.lieunaissance_;
