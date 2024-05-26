@@ -12,8 +12,10 @@ namespace Candidature
         {
             InitializeComponent();
             numero();
+            affichercandidat();
         }
 
+        //Pour l'insertion des numeros
         public void numero()
         {
             string etat = "";
@@ -21,6 +23,8 @@ namespace Candidature
             Connexion conn = new Connexion();
             using (MySqlConnection connexion = conn.GetConnection())
             {
+                connexion.Open();
+
                 // Trouver le nombre de ligne
                 string sql = "SELECT COUNT(id_candidat) FROM candidat";
                 MySqlCommand command = new MySqlCommand(sql, connexion);
@@ -76,6 +80,37 @@ namespace Candidature
                 {
                     MessageBox.Show("Erreur: " + ex.Message);
                 }
+            }
+        }
+
+        //Afficher les candidats
+        public void affichercandidat()
+        {
+            Connexion conn = new Connexion();
+            try
+            {
+                using (MySqlConnection connexion = conn.GetConnection())
+                {
+                    connexion.Open();
+                    string sql = "SELECT nom, prenoms, numeros, politique FROM candidat";
+
+                    MySqlCommand command = new MySqlCommand(sql, connexion);
+                    MySqlDataReader reader = command.ExecuteReader();
+
+                    while (reader.Read())
+                    {
+                        ListViewItem listView = new ListViewItem(reader[0].ToString());
+                        listView.SubItems.Add(reader[1].ToString());
+                        listView.SubItems.Add(reader[2].ToString());
+                        listView.SubItems.Add(reader[3].ToString());
+                        listcandidats.Items.Add(listView);
+                    }
+                    reader.Close();
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Erreur: " + ex.Message);
             }
         }
     }

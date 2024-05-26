@@ -18,7 +18,6 @@ namespace Candidature
             try
             {
                 mySqlConnection = new MySqlConnection(connexion);
-                mySqlConnection.Open();
             }
             catch (Exception ex)
             {
