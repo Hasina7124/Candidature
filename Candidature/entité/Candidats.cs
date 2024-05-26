@@ -201,5 +201,41 @@ namespace Candidature.entité
             return modification;
         }
 
+        //Pour l'ajout d'un candidat
+        public string Modifiecandidat(string nom, string prenoms, string sexe, string lieunaissance, DateTime datenaissance,
+            string adresse, string tel, string cin, string politique, string image)
+        {
+            string etat = "";
+            //Connexion
+            Connexion conn = new Connexion();
+            MySqlConnection connexion = conn.GetConnection();
+            connexion.Open();
+
+            //Requête
+            string sql = "UPDATE candidat SET nom=@nom, prenoms=@prenoms, image=@image, sexe=@sexe, lieunaissance=@lieunaissance, datenaissance=@datenaissance, adresse=@adresse, tel=@tel, cin=@cin, politique=@politique) WHERE id_candidat=@id";
+
+            MySqlCommand cmd = new MySqlCommand(sql, connexion);
+            cmd.Parameters.AddWithValue("@id", id);
+            cmd.Parameters.AddWithValue("@nom", nom);
+            cmd.Parameters.AddWithValue("@prenoms", prenoms);
+            cmd.Parameters.AddWithValue("@image", image);
+            cmd.Parameters.AddWithValue("@sexe", sexe);
+            cmd.Parameters.AddWithValue("@lieunaissance", lieunaissance);
+            cmd.Parameters.AddWithValue("@datenaissance", datenaissance);
+            cmd.Parameters.AddWithValue("@adresse", adresse);
+            cmd.Parameters.AddWithValue("@tel", tel);
+            cmd.Parameters.AddWithValue("@cin", cin);
+            cmd.Parameters.AddWithValue("@politique", politique);
+            try
+            {
+                cmd.ExecuteNonQuery();
+                etat = "Insertion réussi";
+            }
+            catch (Exception ex)
+            {
+                etat = "error" + ex.Message;
+            }
+            return etat;
+        }
     }
 }

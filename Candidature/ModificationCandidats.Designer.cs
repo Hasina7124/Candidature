@@ -106,6 +106,7 @@
             this.modification.TabIndex = 23;
             this.modification.Text = "Modifier";
             this.modification.UseVisualStyleBackColor = true;
+            this.modification.Click += new System.EventHandler(this.modification_Click);
             // 
             // politique
             // 

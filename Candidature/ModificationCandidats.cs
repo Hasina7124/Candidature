@@ -71,5 +71,22 @@ namespace Candidature
         {
             initialization(id);
         }
+
+        private void modification_Click(object sender, EventArgs e)
+        {
+            string etat;
+            string nom_ = nom.Text;
+            string prenoms_ = prenom.Text;
+            string sexe = (mascullin.Checked) ? "Mascullin" : (feminin.Checked) ? "Feminin" : "Non defini";
+            string lieunaissance_ = lieunaissance.Text;
+            DateTime datenaissance_ = datenaissance.Value;
+            string adresse_ = adresse.Text;
+            string tel_ = tel.Text;
+            string cin_ = cin.Text;
+            string politique_ = politique.Text;
+            Candidats candidats = new Candidats();
+            etat = candidats.ajoutcandidat(nom_, prenoms_, sexe, lieunaissance_, datenaissance_, adresse_, tel_, cin_, politique_, pathimage_);
+            MessageBox.Show(etat);
+        }
     }
 }
