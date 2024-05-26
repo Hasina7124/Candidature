@@ -8,6 +8,7 @@ namespace Candidature
 {
     public partial class Listecandidat : Form
     {
+        int id;
         public Listecandidat()
         {
             InitializeComponent();
@@ -92,7 +93,7 @@ namespace Candidature
                 using (MySqlConnection connexion = conn.GetConnection())
                 {
                     connexion.Open();
-                    string sql = "SELECT nom, prenoms, numeros, politique FROM candidat";
+                    string sql = "SELECT nom, prenoms, numeros, politique, id_candidat FROM candidat";
 
                     MySqlCommand command = new MySqlCommand(sql, connexion);
                     MySqlDataReader reader = command.ExecuteReader();
@@ -103,6 +104,7 @@ namespace Candidature
                         listView.SubItems.Add(reader[1].ToString());
                         listView.SubItems.Add(reader[2].ToString());
                         listView.SubItems.Add(reader[3].ToString());
+                        listView.Tag = reader[4].ToString();
                         listcandidats.Items.Add(listView);
                     }
                     reader.Close();
@@ -111,6 +113,52 @@ namespace Candidature
             catch (Exception ex)
             {
                 MessageBox.Show("Erreur: " + ex.Message);
+            }
+        }
+
+        private void modification_Click(object sender, EventArgs e)
+        {
+            if (listcandidats.SelectedItems.Count > 0)
+            {
+
+            }
+            else
+            {
+                MessageBox.Show("Veuillez selectionner le candidat à modifier");
+            }
+        }
+
+        private void listcandidats_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            string pathimage;
+            if (listcandidats.SelectedItems.Count > 0)
+            {
+                int idCandidat = Convert.ToInt32(listcandidats.SelectedItems[0].Tag);
+                id = idCandidat;
+
+                Connexion conn = new Connexion();
+                try
+                {
+                    using (MySqlConnection connexion = conn.GetConnection())
+                    {
+                        connexion.Open();
+                        string sql = "SELECT image FROM candidat";
+
+                        MySqlCommand command = new MySqlCommand(sql, connexion);
+                        MySqlDataReader reader = command.ExecuteReader();
+
+                        while (reader.Read())
+                        {
+                            pathimage = reader.GetString(0);
+                        }
+                        reader.Close();
+                        imagecandidats = imagecandidats;
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Erreur: " + ex.Message);
+                }
             }
         }
     }
