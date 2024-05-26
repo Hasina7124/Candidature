@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -10,6 +11,17 @@ namespace Candidature.entité
 {
     internal class Candidats
     {
+        string pathimage;
+        int id;
+
+        public Candidats(int id)
+        {
+            this.id = id;
+        }
+        public Candidats()
+        {
+        }
+
         //Pour l'ajout d'un candidat
         public string ajoutcandidat(string nom, string prenoms, string sexe, string lieunaissance, DateTime datenaissance,
             string adresse, string tel, string cin, string politique, string image)
@@ -149,6 +161,45 @@ namespace Candidature.entité
                 etat = "erreur";
             }
             return etat;
+        }
+
+        //Initialiser la modification
+        public ModificationCandidats initialisation()
+        {
+            ModificationCandidats modification = new ModificationCandidats(id);
+
+            Connexion conn = new Connexion();
+            try
+            {
+                using (MySqlConnection connexion = conn.GetConnection())
+                {
+                    connexion.Open();
+                    string sql = "SELECT image,nom,prenoms,sexe,lieunaissance,datenaissance,adresse,tel,cin,politique FROM candidat WHERE id_candidat = @id";
+
+                    MySqlCommand command = new MySqlCommand(sql, connexion);
+                    command.Parameters.AddWithValue("@id", id);
+
+                    MySqlDataReader reader = command.ExecuteReader();
+
+                    while (reader.Read())
+                    {
+                        modification.pathimage_ = reader.GetString(0);
+                        modification.nom_ = reader.GetString(1);
+                        modification.prenoms_ = reader.GetString(2);
+                        modification.lieunaissance_ = reader.GetString(4);
+                        modification.datenaissance_ = reader.GetDateTime(5);
+                        modification.adresse_ = reader.GetString(6);
+                        modification.tel_ = reader.GetString(7);
+                        modification.cin_ = reader.GetString(8);
+                        modification.politique_ = reader.GetString(9);
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Erreur: " + ex.Message);
+            }
+            return modification;
         }
     }
 }

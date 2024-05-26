@@ -25,7 +25,7 @@ namespace Candidature
         {
             if (listcandidats.SelectedItems.Count > 0)
             {
-
+                Navigation navigation = new Navigation(new ModificationCandidats(id),conteneur);
             }
             else
             {
