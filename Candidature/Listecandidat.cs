@@ -10,7 +10,9 @@ namespace Candidature
 {
     public partial class Listecandidat : Form
     {
+        //Id du candidats selectionner
         int id;
+        //Chemin du candidat selectionner
         string pathimage;
         public Listecandidat()
         {
@@ -23,7 +25,7 @@ namespace Candidature
             //Afficher les candidats
             candidats.afficherlistecandidat(listcandidats);
         }
-
+        
         private void modification_Click(object sender, EventArgs e)
         {
             if (listcandidats.SelectedItems.Count > 0)
@@ -69,6 +71,17 @@ namespace Candidature
                     MessageBox.Show("Erreur: " + ex.Message);
                 }
             }
+        }
+        
+        private void suppression_Click(object sender, EventArgs e)
+        {
+            string etat;
+            Candidats candidats = new Candidats();
+            etat = candidats.supprimecandidat(id);
+            listcandidats.Items.Clear();
+            candidats.afficherlistecandidat(listcandidats);
+            MessageBox.Show(etat);
+            imagecandidats.Image = null;
         }
     }
 }

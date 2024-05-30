@@ -53,16 +53,18 @@
             this.conteneur.Controls.Add(this.label1);
             this.conteneur.Dock = System.Windows.Forms.DockStyle.Fill;
             this.conteneur.Location = new System.Drawing.Point(0, 0);
+            this.conteneur.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.conteneur.Name = "conteneur";
-            this.conteneur.Size = new System.Drawing.Size(1150, 400);
+            this.conteneur.Size = new System.Drawing.Size(862, 325);
             this.conteneur.TabIndex = 0;
             // 
             // imagecandidats
             // 
             this.imagecandidats.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.imagecandidats.Location = new System.Drawing.Point(936, 46);
+            this.imagecandidats.Location = new System.Drawing.Point(702, 37);
+            this.imagecandidats.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.imagecandidats.Name = "imagecandidats";
-            this.imagecandidats.Size = new System.Drawing.Size(139, 142);
+            this.imagecandidats.Size = new System.Drawing.Size(105, 116);
             this.imagecandidats.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.imagecandidats.TabIndex = 29;
             this.imagecandidats.TabStop = false;
@@ -77,10 +79,11 @@
             this.listcandidats.FullRowSelect = true;
             this.listcandidats.GridLines = true;
             this.listcandidats.HideSelection = false;
-            this.listcandidats.Location = new System.Drawing.Point(12, 80);
+            this.listcandidats.Location = new System.Drawing.Point(9, 65);
+            this.listcandidats.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.listcandidats.MultiSelect = false;
             this.listcandidats.Name = "listcandidats";
-            this.listcandidats.Size = new System.Drawing.Size(853, 308);
+            this.listcandidats.Size = new System.Drawing.Size(641, 251);
             this.listcandidats.TabIndex = 28;
             this.listcandidats.UseCompatibleStateImageBehavior = false;
             this.listcandidats.View = System.Windows.Forms.View.Details;
@@ -108,27 +111,31 @@
             // 
             // retour
             // 
-            this.retour.Location = new System.Drawing.Point(936, 344);
+            this.retour.Location = new System.Drawing.Point(702, 280);
+            this.retour.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.retour.Name = "retour";
-            this.retour.Size = new System.Drawing.Size(140, 41);
+            this.retour.Size = new System.Drawing.Size(105, 33);
             this.retour.TabIndex = 27;
             this.retour.Text = "Retour";
             this.retour.UseVisualStyleBackColor = true;
             // 
             // suppression
             // 
-            this.suppression.Location = new System.Drawing.Point(936, 283);
+            this.suppression.Location = new System.Drawing.Point(702, 230);
+            this.suppression.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.suppression.Name = "suppression";
-            this.suppression.Size = new System.Drawing.Size(140, 41);
+            this.suppression.Size = new System.Drawing.Size(105, 33);
             this.suppression.TabIndex = 26;
             this.suppression.Text = "Supprimer";
             this.suppression.UseVisualStyleBackColor = true;
+            this.suppression.Click += new System.EventHandler(this.suppression_Click);
             // 
             // modification
             // 
-            this.modification.Location = new System.Drawing.Point(936, 222);
+            this.modification.Location = new System.Drawing.Point(702, 180);
+            this.modification.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.modification.Name = "modification";
-            this.modification.Size = new System.Drawing.Size(140, 41);
+            this.modification.Size = new System.Drawing.Size(105, 33);
             this.modification.TabIndex = 25;
             this.modification.Text = "Modification";
             this.modification.UseVisualStyleBackColor = true;
@@ -138,19 +145,21 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Mongolian Baiti", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(442, 24);
+            this.label1.Location = new System.Drawing.Point(332, 20);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(261, 31);
+            this.label1.Size = new System.Drawing.Size(208, 25);
             this.label1.TabIndex = 1;
             this.label1.Text = "LISTE CANDIDAT";
             // 
             // Listecandidat
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1150, 400);
+            this.ClientSize = new System.Drawing.Size(862, 325);
             this.Controls.Add(this.conteneur);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Listecandidat";
             this.Text = "Listecandidat";
             this.conteneur.ResumeLayout(false);

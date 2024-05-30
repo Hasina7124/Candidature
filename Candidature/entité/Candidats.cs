@@ -221,27 +221,52 @@ namespace Candidature.entité
             //Connexion
             Connexion conn = new Connexion();
             MySqlConnection connexion = conn.GetConnection();
-            connexion.Open();
-
-            //Requête
-            string sql = "UPDATE candidat SET nom=@nom, prenoms=@prenoms, image=@image, sexe=@sexe, lieunaissance=@lieunaissance, datenaissance=@datenaissance, adresse=@adresse, tel=@tel, cin=@cin, politique=@politique WHERE id_candidat=@id";
-
-            MySqlCommand cmd = new MySqlCommand(sql, connexion);
-            cmd.Parameters.AddWithValue("@id", id);
-            cmd.Parameters.AddWithValue("@nom", nom);
-            cmd.Parameters.AddWithValue("@prenoms", prenoms);
-            cmd.Parameters.AddWithValue("@image", image);
-            cmd.Parameters.AddWithValue("@sexe", sexe);
-            cmd.Parameters.AddWithValue("@lieunaissance", lieunaissance);
-            cmd.Parameters.AddWithValue("@datenaissance", datenaissance);
-            cmd.Parameters.AddWithValue("@adresse", adresse);
-            cmd.Parameters.AddWithValue("@tel", tel);
-            cmd.Parameters.AddWithValue("@cin", cin);
-            cmd.Parameters.AddWithValue("@politique", politique);
             try
             {
+                connexion.Open();
+
+                //Requête
+                string sql = "UPDATE candidat SET nom=@nom, prenoms=@prenoms, image=@image, sexe=@sexe, lieunaissance=@lieunaissance, datenaissance=@datenaissance, adresse=@adresse, tel=@tel, cin=@cin, politique=@politique WHERE id_candidat=@id";
+
+                MySqlCommand cmd = new MySqlCommand(sql, connexion);
+                cmd.Parameters.AddWithValue("@id", id);
+                cmd.Parameters.AddWithValue("@nom", nom);
+                cmd.Parameters.AddWithValue("@prenoms", prenoms);
+                cmd.Parameters.AddWithValue("@image", image);
+                cmd.Parameters.AddWithValue("@sexe", sexe);
+                cmd.Parameters.AddWithValue("@lieunaissance", lieunaissance);
+                cmd.Parameters.AddWithValue("@datenaissance", datenaissance);
+                cmd.Parameters.AddWithValue("@adresse", adresse);
+                cmd.Parameters.AddWithValue("@tel", tel);
+                cmd.Parameters.AddWithValue("@cin", cin);
+                cmd.Parameters.AddWithValue("@politique", politique);
+            
                 cmd.ExecuteNonQuery();
                 etat = "Modification réussi";
+            }
+            catch (Exception ex)
+            {
+                etat = "error" + ex.Message;
+            }
+            return etat;
+        }
+
+        //Pour le suppression d'un candidats
+        public string supprimecandidat(int id)
+        {
+            string etat = "";
+            //Connexion
+            Connexion conn = new Connexion();
+            MySqlConnection connexion = conn.GetConnection();
+            try
+            {
+                connexion.Open();
+
+                string sql = "DELETE FROM candidat WHERE id_candidat=@id";
+                MySqlCommand deleteCommand = new MySqlCommand(sql, connexion);
+                deleteCommand.Parameters.AddWithValue("@id", id);
+                deleteCommand.ExecuteNonQuery();
+                etat = "Suppression reussi.";
             }
             catch (Exception ex)
             {
