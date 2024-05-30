@@ -17,14 +17,9 @@ namespace Candidature
             InitializeComponent();
         }
 
-        private void insertion_Click(object sender, EventArgs e)
+        private void candidat_Click(object sender, EventArgs e)
         {
-            Navigation navigation = new Navigation(new InsertionCandidat(), conteneur);
-        }
-
-        private void listecandidat_Click(object sender, EventArgs e)
-        {
-            Navigation navigation = new Navigation(new Listecandidat(), conteneur);
+            Navigation navigation = new Navigation(new CandidatForm(), conteneur);
         }
     }
 }

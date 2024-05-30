@@ -53,12 +53,16 @@
             this.label18 = new System.Windows.Forms.Label();
             this.parcourir = new System.Windows.Forms.Button();
             this.image = new System.Windows.Forms.PictureBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.quitter = new System.Windows.Forms.Button();
             this.conteneur.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.image)).BeginInit();
             this.SuspendLayout();
             // 
             // conteneur
             // 
+            this.conteneur.Controls.Add(this.quitter);
+            this.conteneur.Controls.Add(this.label1);
             this.conteneur.Controls.Add(this.retour);
             this.conteneur.Controls.Add(this.modification);
             this.conteneur.Controls.Add(this.politique);
@@ -85,7 +89,7 @@
             this.conteneur.Controls.Add(this.image);
             this.conteneur.Dock = System.Windows.Forms.DockStyle.Fill;
             this.conteneur.Location = new System.Drawing.Point(0, 0);
-            this.conteneur.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.conteneur.Margin = new System.Windows.Forms.Padding(2);
             this.conteneur.Name = "conteneur";
             this.conteneur.Size = new System.Drawing.Size(862, 325);
             this.conteneur.TabIndex = 47;
@@ -93,7 +97,7 @@
             // retour
             // 
             this.retour.Location = new System.Drawing.Point(702, 167);
-            this.retour.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.retour.Margin = new System.Windows.Forms.Padding(2);
             this.retour.Name = "retour";
             this.retour.Size = new System.Drawing.Size(105, 33);
             this.retour.TabIndex = 24;
@@ -104,7 +108,7 @@
             // modification
             // 
             this.modification.Location = new System.Drawing.Point(702, 116);
-            this.modification.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.modification.Margin = new System.Windows.Forms.Padding(2);
             this.modification.Name = "modification";
             this.modification.Size = new System.Drawing.Size(105, 33);
             this.modification.TabIndex = 23;
@@ -115,7 +119,7 @@
             // politique
             // 
             this.politique.Location = new System.Drawing.Point(362, 271);
-            this.politique.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.politique.Margin = new System.Windows.Forms.Padding(2);
             this.politique.Name = "politique";
             this.politique.Size = new System.Drawing.Size(234, 20);
             this.politique.TabIndex = 22;
@@ -134,7 +138,7 @@
             // 
             this.autres.AutoSize = true;
             this.autres.Location = new System.Drawing.Point(178, 298);
-            this.autres.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.autres.Margin = new System.Windows.Forms.Padding(2);
             this.autres.Name = "autres";
             this.autres.Size = new System.Drawing.Size(55, 17);
             this.autres.TabIndex = 20;
@@ -146,7 +150,7 @@
             // 
             this.feminin.AutoSize = true;
             this.feminin.Location = new System.Drawing.Point(102, 298);
-            this.feminin.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.feminin.Margin = new System.Windows.Forms.Padding(2);
             this.feminin.Name = "feminin";
             this.feminin.Size = new System.Drawing.Size(61, 17);
             this.feminin.TabIndex = 19;
@@ -168,7 +172,7 @@
             // 
             this.mascullin.AutoSize = true;
             this.mascullin.Location = new System.Drawing.Point(22, 298);
-            this.mascullin.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.mascullin.Margin = new System.Windows.Forms.Padding(2);
             this.mascullin.Name = "mascullin";
             this.mascullin.Size = new System.Drawing.Size(69, 17);
             this.mascullin.TabIndex = 17;
@@ -179,7 +183,7 @@
             // cin
             // 
             this.cin.Location = new System.Drawing.Point(362, 225);
-            this.cin.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cin.Margin = new System.Windows.Forms.Padding(2);
             this.cin.Name = "cin";
             this.cin.Size = new System.Drawing.Size(234, 20);
             this.cin.TabIndex = 16;
@@ -197,7 +201,7 @@
             // tel
             // 
             this.tel.Location = new System.Drawing.Point(362, 181);
-            this.tel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tel.Margin = new System.Windows.Forms.Padding(2);
             this.tel.Name = "tel";
             this.tel.Size = new System.Drawing.Size(234, 20);
             this.tel.TabIndex = 14;
@@ -215,7 +219,7 @@
             // adresse
             // 
             this.adresse.Location = new System.Drawing.Point(362, 137);
-            this.adresse.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.adresse.Margin = new System.Windows.Forms.Padding(2);
             this.adresse.Name = "adresse";
             this.adresse.Size = new System.Drawing.Size(234, 20);
             this.adresse.TabIndex = 12;
@@ -233,7 +237,7 @@
             // datenaissance
             // 
             this.datenaissance.Location = new System.Drawing.Point(362, 93);
-            this.datenaissance.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.datenaissance.Margin = new System.Windows.Forms.Padding(2);
             this.datenaissance.Name = "datenaissance";
             this.datenaissance.Size = new System.Drawing.Size(176, 20);
             this.datenaissance.TabIndex = 10;
@@ -251,7 +255,7 @@
             // lieunaissance
             // 
             this.lieunaissance.Location = new System.Drawing.Point(362, 51);
-            this.lieunaissance.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.lieunaissance.Margin = new System.Windows.Forms.Padding(2);
             this.lieunaissance.Name = "lieunaissance";
             this.lieunaissance.Size = new System.Drawing.Size(176, 20);
             this.lieunaissance.TabIndex = 7;
@@ -269,7 +273,7 @@
             // prenom
             // 
             this.prenom.Location = new System.Drawing.Point(22, 253);
-            this.prenom.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.prenom.Margin = new System.Windows.Forms.Padding(2);
             this.prenom.Name = "prenom";
             this.prenom.Size = new System.Drawing.Size(254, 20);
             this.prenom.TabIndex = 5;
@@ -287,7 +291,7 @@
             // nom
             // 
             this.nom.Location = new System.Drawing.Point(22, 210);
-            this.nom.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.nom.Margin = new System.Windows.Forms.Padding(2);
             this.nom.Name = "nom";
             this.nom.Size = new System.Drawing.Size(176, 20);
             this.nom.TabIndex = 3;
@@ -305,7 +309,7 @@
             // parcourir
             // 
             this.parcourir.Location = new System.Drawing.Point(64, 162);
-            this.parcourir.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.parcourir.Margin = new System.Windows.Forms.Padding(2);
             this.parcourir.Name = "parcourir";
             this.parcourir.Size = new System.Drawing.Size(63, 26);
             this.parcourir.TabIndex = 1;
@@ -316,12 +320,32 @@
             // image
             // 
             this.image.Location = new System.Drawing.Point(22, 23);
-            this.image.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.image.Margin = new System.Windows.Forms.Padding(2);
             this.image.Name = "image";
             this.image.Size = new System.Drawing.Size(158, 131);
             this.image.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.image.TabIndex = 0;
             this.image.TabStop = false;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(698, 23);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(122, 24);
+            this.label1.TabIndex = 26;
+            this.label1.Text = "Modification";
+            // 
+            // quitter
+            // 
+            this.quitter.Location = new System.Drawing.Point(692, 281);
+            this.quitter.Margin = new System.Windows.Forms.Padding(2);
+            this.quitter.Name = "quitter";
+            this.quitter.Size = new System.Drawing.Size(124, 33);
+            this.quitter.TabIndex = 27;
+            this.quitter.Text = "Quitter";
+            this.quitter.UseVisualStyleBackColor = true;
             // 
             // ModificationCandidats
             // 
@@ -330,7 +354,7 @@
             this.ClientSize = new System.Drawing.Size(862, 325);
             this.Controls.Add(this.conteneur);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "ModificationCandidats";
             this.Text = "ModificationCandidats";
             this.Load += new System.EventHandler(this.ModificationCandidats_Load);
@@ -368,5 +392,7 @@
         private System.Windows.Forms.Label label18;
         public System.Windows.Forms.Button parcourir;
         public System.Windows.Forms.PictureBox image;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button quitter;
     }
 }

@@ -86,7 +86,7 @@ namespace Candidature
 
         private void retour_Click(object sender, EventArgs e)
         {
-            Navigation navigation = new Navigation(new Acceuil(), conteneur);
+            Navigation navigation = new Navigation(new CandidatForm(), conteneur);
         }
     }
 }

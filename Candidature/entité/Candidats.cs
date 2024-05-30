@@ -41,7 +41,7 @@ namespace Candidature.entité
             //Connexion
             Connexion conn = new Connexion();
             MySqlConnection connexion = conn.GetConnection();
-            connexion.Open();
+            
 
             //Requête
             string sql = "INSERT INTO candidat(nom, prenoms, image, sexe, lieunaissance, datenaissance, adresse, tel, cin,politique) " +
@@ -60,6 +60,7 @@ namespace Candidature.entité
             cmd.Parameters.AddWithValue("@politique", politique);
             try
             {
+                connexion.Open();
                 cmd.ExecuteNonQuery();
                 etat = "Insertion réussi";
             }catch (Exception ex)
