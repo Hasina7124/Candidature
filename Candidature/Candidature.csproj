@@ -98,6 +98,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Acceuil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Acceuil.Designer.cs">
+      <DependentUpon>Acceuil.cs</DependentUpon>
+    </Compile>
     <Compile Include="entité\Candidats.cs" />
     <Compile Include="entité\Connexion.cs" />
     <Compile Include="InsertionCandidat.cs">
@@ -127,6 +133,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Acceuil.resx">
+      <DependentUpon>Acceuil.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="InsertionCandidat.resx">
       <DependentUpon>InsertionCandidat.cs</DependentUpon>
     </EmbeddedResource>

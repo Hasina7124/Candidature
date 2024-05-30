@@ -53,7 +53,7 @@
             this.conteneur.Controls.Add(this.label1);
             this.conteneur.Dock = System.Windows.Forms.DockStyle.Fill;
             this.conteneur.Location = new System.Drawing.Point(0, 0);
-            this.conteneur.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.conteneur.Margin = new System.Windows.Forms.Padding(2);
             this.conteneur.Name = "conteneur";
             this.conteneur.Size = new System.Drawing.Size(862, 325);
             this.conteneur.TabIndex = 0;
@@ -62,7 +62,7 @@
             // 
             this.imagecandidats.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.imagecandidats.Location = new System.Drawing.Point(702, 37);
-            this.imagecandidats.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.imagecandidats.Margin = new System.Windows.Forms.Padding(2);
             this.imagecandidats.Name = "imagecandidats";
             this.imagecandidats.Size = new System.Drawing.Size(105, 116);
             this.imagecandidats.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -80,7 +80,7 @@
             this.listcandidats.GridLines = true;
             this.listcandidats.HideSelection = false;
             this.listcandidats.Location = new System.Drawing.Point(9, 65);
-            this.listcandidats.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.listcandidats.Margin = new System.Windows.Forms.Padding(2);
             this.listcandidats.MultiSelect = false;
             this.listcandidats.Name = "listcandidats";
             this.listcandidats.Size = new System.Drawing.Size(641, 251);
@@ -112,17 +112,18 @@
             // retour
             // 
             this.retour.Location = new System.Drawing.Point(702, 280);
-            this.retour.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.retour.Margin = new System.Windows.Forms.Padding(2);
             this.retour.Name = "retour";
             this.retour.Size = new System.Drawing.Size(105, 33);
             this.retour.TabIndex = 27;
             this.retour.Text = "Retour";
             this.retour.UseVisualStyleBackColor = true;
+            this.retour.Click += new System.EventHandler(this.retour_Click);
             // 
             // suppression
             // 
             this.suppression.Location = new System.Drawing.Point(702, 230);
-            this.suppression.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.suppression.Margin = new System.Windows.Forms.Padding(2);
             this.suppression.Name = "suppression";
             this.suppression.Size = new System.Drawing.Size(105, 33);
             this.suppression.TabIndex = 26;
@@ -133,7 +134,7 @@
             // modification
             // 
             this.modification.Location = new System.Drawing.Point(702, 180);
-            this.modification.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.modification.Margin = new System.Windows.Forms.Padding(2);
             this.modification.Name = "modification";
             this.modification.Size = new System.Drawing.Size(105, 33);
             this.modification.TabIndex = 25;
@@ -159,7 +160,7 @@
             this.ClientSize = new System.Drawing.Size(862, 325);
             this.Controls.Add(this.conteneur);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Listecandidat";
             this.Text = "Listecandidat";
             this.conteneur.ResumeLayout(false);

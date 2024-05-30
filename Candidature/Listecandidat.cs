@@ -83,5 +83,10 @@ namespace Candidature
             MessageBox.Show(etat);
             imagecandidats.Image = null;
         }
+
+        private void retour_Click(object sender, EventArgs e)
+        {
+            Navigation navigation = new Navigation(new Acceuil(), conteneur);
+        }
     }
 }

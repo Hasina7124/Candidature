@@ -15,16 +15,7 @@ namespace Candidature
         public Mere()
         {
             InitializeComponent();
-        }
-
-        private void insertion_Click(object sender, EventArgs e)
-        {
-            Navigation navigation = new Navigation(new InsertionCandidat(), conteneur);
-        }
-
-        private void listecandidat_Click(object sender, EventArgs e)
-        {
-            Navigation navigation = new Navigation(new Listecandidat(), conteneur);
+            Navigation navigation = new Navigation(new Acceuil(), conteneur);
         }
     }
 }

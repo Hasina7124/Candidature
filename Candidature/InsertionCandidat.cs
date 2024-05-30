@@ -48,5 +48,10 @@ namespace Candidature
             etat = candidats.ajoutcandidat(nom_, prenoms_, sexe, lieunaissance_, datenaissance_, adresse_, tel_, cin_, politique_, image_);
             MessageBox.Show(etat);
         }
+
+        private void retour_Click(object sender, EventArgs e)
+        {
+            Navigation navigation = new Navigation(new Acceuil(), conteneur);
+        }
     }
 }
