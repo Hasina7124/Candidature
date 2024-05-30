@@ -15,17 +15,7 @@ namespace Candidature
     public partial class ModificationCandidats : Form
     {
         int id;
-        public string pathimage_ { get; set; }
-        public string nom_ { get; set; }
-        public string prenoms_ { get; set; }
-        public string sexe_ { get; set; }
-        public string lieunaissance_ { get; set; }
-        public string adresse_ { get; set; }
-        public string tel_ { get; set; }
-        public string cin_ { get; set; }
-        public string politique_ { get; set; }
-        public DateTime datenaissance_ { get; set; }
-
+        string image_;
         public ModificationCandidats(int id)
         {
             InitializeComponent();
@@ -36,17 +26,15 @@ namespace Candidature
         public void initialization(int id)
         {
             Candidats candidats = new Candidats(id);
-            candidats.initialisation();
-            ModificationCandidats modification = candidats.initialisation();
 
             string pathimage;
-            pathimage = modification.pathimage_;
+            pathimage = candidats.image;
 
-            if(modification.sexe_ == "Mascullin")
+            if(candidats.sexe == "Mascullin")
             {
                 mascullin.Checked = true;
             }
-            else if(modification.sexe_ == "Feminin")
+            else if(candidats.sexe == "Feminin")
             {
                 feminin.Checked = true;
             }
@@ -54,14 +42,14 @@ namespace Candidature
             {
                 autres.Checked = true;
             }
-            nom.Text = modification.nom_;
-            prenom.Text = modification.prenoms_;
-            lieunaissance.Text = modification.lieunaissance_;
-            datenaissance.Value = modification.datenaissance_;
-            adresse.Text = modification.adresse_;
-            tel.Text = modification.tel_;
-            cin.Text = modification.cin_;
-            politique.Text = modification.politique_;
+            nom.Text = candidats.nom;
+            prenom.Text = candidats.prenoms;
+            lieunaissance.Text = candidats.lieunaissance;
+            datenaissance.Value = candidats.datenaissance;
+            adresse.Text = candidats.adresse;
+            tel.Text = candidats.tel;
+            cin.Text = candidats.cin;
+            politique.Text = candidats.politique;
 
             Image image_ = Image.FromFile(pathimage);
             image.Image = image_;
@@ -75,18 +63,41 @@ namespace Candidature
         private void modification_Click(object sender, EventArgs e)
         {
             string etat;
-            string nom_ = nom.Text;
-            string prenoms_ = prenom.Text;
-            string sexe = (mascullin.Checked) ? "Mascullin" : (feminin.Checked) ? "Feminin" : "Non defini";
-            string lieunaissance_ = lieunaissance.Text;
-            DateTime datenaissance_ = datenaissance.Value;
-            string adresse_ = adresse.Text;
-            string tel_ = tel.Text;
-            string cin_ = cin.Text;
-            string politique_ = politique.Text;
-            Candidats candidats = new Candidats();
-            etat = candidats.ajoutcandidat(nom_, prenoms_, sexe, lieunaissance_, datenaissance_, adresse_, tel_, cin_, politique_, pathimage_);
+
+            Candidats candidats = new Candidats(id);
+            candidats.nom = nom.Text;
+            candidats.prenoms = prenom.Text;
+            candidats.sexe = (mascullin.Checked) ? "Mascullin" : (feminin.Checked) ? "Feminin" : "Non defini";
+            candidats.lieunaissance = lieunaissance.Text;
+            candidats.datenaissance = datenaissance.Value;
+            candidats.adresse = adresse.Text;
+            candidats.tel = tel.Text;
+            candidats.cin = cin.Text;
+            candidats.politique = politique.Text;
+            if(image_ != null)
+            {
+                candidats.image = image_;
+            }
+
+            etat = candidats.Modifiecandidat();
             MessageBox.Show(etat);
+        }
+
+        private void retour_Click(object sender, EventArgs e)
+        {
+            Navigation navigation = new Navigation(new Listecandidat(), conteneur);
+        }
+
+        private void parcourir_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog openFileDialog = new OpenFileDialog();
+            DialogResult result = openFileDialog.ShowDialog();
+
+            if (result == DialogResult.OK)
+            {
+                image.ImageLocation = openFileDialog.FileName;
+                image_ = openFileDialog.FileName;
+            }
         }
     }
 }

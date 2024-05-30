@@ -11,13 +11,26 @@ namespace Candidature.entité
 {
     internal class Candidats
     {
-        string pathimage;
+        public string nom { get; set; }
+        public string prenoms { get; set; }
+        public string sexe { get; set; }
+        public string lieunaissance { get; set; }
+        public DateTime datenaissance { get; set; }
+        public string adresse { get; set; }
+        public string tel { get; set; }
+        public string cin { get; set; }
+        public string politique { get; set; }
+        public string image { get; set; }
+
+
         int id;
 
         public Candidats(int id)
         {
+            initialisation(id);
             this.id = id;
         }
+
         public Candidats() { }
 
         //Pour l'ajout d'un candidat
@@ -162,7 +175,7 @@ namespace Candidature.entité
         }
 
         //Initialiser la modification
-        public ModificationCandidats initialisation()
+        public ModificationCandidats initialisation(int id)
         {
             ModificationCandidats modification = new ModificationCandidats(id);
 
@@ -181,16 +194,16 @@ namespace Candidature.entité
 
                     while (reader.Read())
                     {
-                        modification.pathimage_ = reader.GetString(0);
-                        modification.nom_ = reader.GetString(1);
-                        modification.prenoms_ = reader.GetString(2);
-                        modification.sexe_ = reader.GetString(3);
-                        modification.lieunaissance_ = reader.GetString(4);
-                        modification.datenaissance_ = reader.GetDateTime(5);
-                        modification.adresse_ = reader.GetString(6);
-                        modification.tel_ = reader.GetString(7);
-                        modification.cin_ = reader.GetString(8);
-                        modification.politique_ = reader.GetString(9);
+                        image = reader.GetString(0);
+                        nom = reader.GetString(1);
+                        prenoms = reader.GetString(2);
+                        sexe = reader.GetString(3);
+                        lieunaissance = reader.GetString(4);
+                        datenaissance = reader.GetDateTime(5);
+                        adresse = reader.GetString(6);
+                        tel = reader.GetString(7);
+                        cin = reader.GetString(8);
+                        politique = reader.GetString(9);
                     }
                 }
             }
@@ -202,8 +215,7 @@ namespace Candidature.entité
         }
 
         //Pour l'ajout d'un candidat
-        public string Modifiecandidat(string nom, string prenoms, string sexe, string lieunaissance, DateTime datenaissance,
-            string adresse, string tel, string cin, string politique, string image)
+        public string Modifiecandidat()
         {
             string etat = "";
             //Connexion
@@ -212,7 +224,7 @@ namespace Candidature.entité
             connexion.Open();
 
             //Requête
-            string sql = "UPDATE candidat SET nom=@nom, prenoms=@prenoms, image=@image, sexe=@sexe, lieunaissance=@lieunaissance, datenaissance=@datenaissance, adresse=@adresse, tel=@tel, cin=@cin, politique=@politique) WHERE id_candidat=@id";
+            string sql = "UPDATE candidat SET nom=@nom, prenoms=@prenoms, image=@image, sexe=@sexe, lieunaissance=@lieunaissance, datenaissance=@datenaissance, adresse=@adresse, tel=@tel, cin=@cin, politique=@politique WHERE id_candidat=@id";
 
             MySqlCommand cmd = new MySqlCommand(sql, connexion);
             cmd.Parameters.AddWithValue("@id", id);
@@ -229,7 +241,7 @@ namespace Candidature.entité
             try
             {
                 cmd.ExecuteNonQuery();
-                etat = "Insertion réussi";
+                etat = "Modification réussi";
             }
             catch (Exception ex)
             {

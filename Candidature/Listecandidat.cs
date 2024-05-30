@@ -16,8 +16,11 @@ namespace Candidature
         {
             InitializeComponent();
 
+            
             Candidats candidats = new Candidats();
+            //Inserer les numeros
             candidats.numero();
+            //Afficher les candidats
             candidats.afficherlistecandidat(listcandidats);
         }
 
@@ -47,9 +50,10 @@ namespace Candidature
                     using (MySqlConnection connexion = conn.GetConnection())
                     {
                         connexion.Open();
-                        string sql = "SELECT image FROM candidat";
+                        string sql = "SELECT image FROM candidat WHERE id_candidat=@id";
 
                         MySqlCommand command = new MySqlCommand(sql, connexion);
+                        command.Parameters.AddWithValue("@id",id);
                         MySqlDataReader reader = command.ExecuteReader();
 
                         while (reader.Read())
