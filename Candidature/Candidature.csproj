@@ -125,6 +125,12 @@
     <Compile Include="InsertionCandidat.Designer.cs">
       <DependentUpon>InsertionCandidat.cs</DependentUpon>
     </Compile>
+    <Compile Include="InsertionVote.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InsertionVote.Designer.cs">
+      <DependentUpon>InsertionVote.cs</DependentUpon>
+    </Compile>
     <Compile Include="Listecandidat.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -157,6 +163,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="InsertionCandidat.resx">
       <DependentUpon>InsertionCandidat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InsertionVote.resx">
+      <DependentUpon>InsertionVote.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Listecandidat.resx">
       <DependentUpon>Listecandidat.cs</DependentUpon>

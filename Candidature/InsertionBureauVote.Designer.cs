@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label10 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.nom = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -38,17 +37,8 @@
             this.insertion = new System.Windows.Forms.Button();
             this.region = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
             this.SuspendLayout();
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(676, 9);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(174, 16);
-            this.label10.TabIndex = 26;
-            this.label10.Text = "Insértion bureau de vote";
             // 
             // label1
             // 
@@ -124,11 +114,22 @@
             this.label3.TabIndex = 34;
             this.label3.Text = "Region";
             // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(584, 23);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(237, 24);
+            this.label5.TabIndex = 36;
+            this.label5.Text = "Insértion bureau de vote";
+            // 
             // InsertionBureauVote
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(862, 325);
+            this.Controls.Add(this.label5);
             this.Controls.Add(this.region);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.insertion);
@@ -138,7 +139,6 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.nom);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.label10);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "InsertionBureauVote";
             this.Text = "InsertionBureauVote";
@@ -148,8 +148,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox nom;
         private System.Windows.Forms.Label label2;
@@ -159,5 +157,6 @@
         private System.Windows.Forms.Button insertion;
         private System.Windows.Forms.TextBox region;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label5;
     }
 }

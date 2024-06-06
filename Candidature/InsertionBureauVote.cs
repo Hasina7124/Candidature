@@ -26,9 +26,9 @@ namespace Candidature
             vote.nom = nom.Text;
             vote.adresse = adresse.Text;
             vote.ville = ville.Text;
+            vote.region = region.Text;
 
-            BureauVote bureauvote = new BureauVote();
-            etat = bureauvote.ajoutbureauvote();
+            etat = vote.insertionbv();
             MessageBox.Show(etat);
         }
     }

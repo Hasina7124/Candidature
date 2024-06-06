@@ -14,7 +14,7 @@ namespace Candidature.entité
         public string ville { get; set; }
         public string region { get; set; }
 
-        public string ajoutbureauvote()
+        public string insertionbv()
         {
             string etat = "";
             //Connexion
@@ -40,5 +40,7 @@ namespace Candidature.entité
             }
             return etat;
         }
+
+
     }
 }

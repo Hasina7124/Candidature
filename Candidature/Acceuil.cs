@@ -21,5 +21,10 @@ namespace Candidature
         {
             Navigation navigation = new Navigation(new CandidatForm(), conteneur);
         }
+
+        private void listecandidat_Click(object sender, EventArgs e)
+        {
+            Navigation navigation = new Navigation(new InsertionBureauVote(), conteneur);
+        }
     }
 }

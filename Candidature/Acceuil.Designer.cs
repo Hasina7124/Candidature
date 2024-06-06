@@ -68,6 +68,7 @@
             this.listecandidat.TabIndex = 2;
             this.listecandidat.Text = "Bureau Vote";
             this.listecandidat.UseVisualStyleBackColor = true;
+            this.listecandidat.Click += new System.EventHandler(this.listecandidat_Click);
             // 
             // candidat
             // 
@@ -91,14 +92,14 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "ELECTION PRESIDENTIELLE";
             // 
-            // Accuille
+            // Acceuil
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(862, 325);
             this.Controls.Add(this.conteneur);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "Accuille";
+            this.Name = "Acceuil";
             this.Text = "Accuil";
             this.conteneur.ResumeLayout(false);
             this.conteneur.PerformLayout();
