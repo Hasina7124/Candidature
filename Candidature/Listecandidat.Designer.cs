@@ -61,10 +61,11 @@
             // imagecandidats
             // 
             this.imagecandidats.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.imagecandidats.Location = new System.Drawing.Point(702, 37);
+            this.imagecandidats.Image = global::Candidature.Properties.Resources.defaut;
+            this.imagecandidats.Location = new System.Drawing.Point(692, 40);
             this.imagecandidats.Margin = new System.Windows.Forms.Padding(2);
             this.imagecandidats.Name = "imagecandidats";
-            this.imagecandidats.Size = new System.Drawing.Size(105, 116);
+            this.imagecandidats.Size = new System.Drawing.Size(136, 116);
             this.imagecandidats.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.imagecandidats.TabIndex = 29;
             this.imagecandidats.TabStop = false;

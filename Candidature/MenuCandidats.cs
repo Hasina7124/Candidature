@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Candidature
 {
-    public partial class CandidatForm : Form
+    public partial class MenuCandidats : Form
     {
-        public CandidatForm()
+        public MenuCandidats()
         {
             InitializeComponent();
         }
@@ -25,6 +25,21 @@ namespace Candidature
         private void listecandidat_Click(object sender, EventArgs e)
         {
             Navigation navigation = new Navigation(new Listecandidat(), conteneur);
+        }
+
+        private void retour_Click(object sender, EventArgs e)
+        {
+            Navigation navigation = new Navigation(new Acceuil(), conteneur);
+        }
+
+        private void Quitter_Click(object sender, EventArgs e)
+        {
+            Quitter quitter = new Quitter();
+            Form Mere = quitter.FindTopLevelForm(this);
+            if (Mere != null)
+            {
+                Mere.Close();
+            }
         }
     }
 }

@@ -35,23 +35,37 @@ namespace Candidature
         private void insertion_Click(object sender, EventArgs e)
         {
             string etat;
-            string nom_ = nom.Text;
-            string prenoms_ = prenoms.Text;
-            string sexe = (mascullin.Checked) ? "Mascullin" : (feminin.Checked) ? "Feminin":"Non defini";
-            string lieunaissance_ = lieunaissance.Text;
-            DateTime datenaissance_ = datenaissance.Value;
-            string adresse_ = adresse.Text;
-            string tel_ = tel.Text;
-            string cin_ = cin.Text;
-            string politique_ = politique.Text;
+
             Candidats candidats = new Candidats();
-            etat = candidats.ajoutcandidat(nom_, prenoms_, sexe, lieunaissance_, datenaissance_, adresse_, tel_, cin_, politique_, image_);
+
+            candidats.nom = nom.Text;
+            candidats.prenoms = prenoms.Text;
+            candidats.sexe = (mascullin.Checked) ? "Mascullin" : (feminin.Checked) ? "Feminin":"Non defini";
+            candidats.lieunaissance = lieunaissance.Text;
+            candidats.datenaissance = datenaissance.Value;
+            candidats.adresse = adresse.Text;
+            candidats.tel = tel.Text;
+            candidats.cin = cin.Text;
+            candidats.politique = politique.Text;
+            candidats.image = image_;
+
+            etat = candidats.ajoutcandidat();
             MessageBox.Show(etat);
         }
 
         private void retour_Click(object sender, EventArgs e)
         {
-            Navigation navigation = new Navigation(new CandidatForm(), conteneur);
+            Navigation navigation = new Navigation(new MenuCandidats(), conteneur);
+        }
+
+        private void quitter_Click(object sender, EventArgs e)
+        {
+            Quitter quitter = new Quitter();
+            Form Mere = quitter.FindTopLevelForm(this);
+            if (Mere != null)
+            {
+                Mere.Close();
+            }
         }
     }
 }

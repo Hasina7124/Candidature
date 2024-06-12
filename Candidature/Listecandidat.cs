@@ -18,7 +18,6 @@ namespace Candidature
         {
             InitializeComponent();
 
-            
             Candidats candidats = new Candidats();
             //Inserer les numeros
             candidats.numero();
@@ -86,7 +85,7 @@ namespace Candidature
 
         private void retour_Click(object sender, EventArgs e)
         {
-            Navigation navigation = new Navigation(new CandidatForm(), conteneur);
+            Navigation navigation = new Navigation(new MenuCandidats(), conteneur);
         }
     }
 }

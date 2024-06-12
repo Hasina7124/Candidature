@@ -17,6 +17,7 @@ namespace Candidature
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Mere());
+            //Application.Run(new Resultat());
         }
     }
 }

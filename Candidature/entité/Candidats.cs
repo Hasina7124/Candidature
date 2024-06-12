@@ -23,7 +23,8 @@ namespace Candidature.entité
         public string image { get; set; }
 
 
-        int id;
+        public int id { get; set; }
+        public int numeros { get; set; }
 
         public Candidats(int id)
         {
@@ -34,8 +35,7 @@ namespace Candidature.entité
         public Candidats() { }
 
         //Pour l'ajout d'un candidat
-        public string ajoutcandidat(string nom, string prenoms, string sexe, string lieunaissance, DateTime datenaissance,
-            string adresse, string tel, string cin, string politique, string image)
+        public string ajoutcandidat()
         {
             string etat="";
             //Connexion
@@ -274,6 +274,87 @@ namespace Candidature.entité
                 etat = "error" + ex.Message;
             }
             return etat;
+        }
+
+        //Prendre les candidats dans la base de données
+        public List<KeyValuePair<string, int>> GetCandidats()
+        {
+            List<KeyValuePair<string, int>> candidats = new List<KeyValuePair<string, int>>();
+            Connexion conn = new Connexion();
+
+            try
+            {
+                using (MySqlConnection connexion = conn.GetConnection())
+                {
+                    connexion.Open();
+                    string sql = "SELECT id_candidat, nom, prenoms,numeros FROM candidat";
+
+                    MySqlCommand command = new MySqlCommand(sql, connexion);
+                    using (MySqlDataReader reader = command.ExecuteReader())
+                    {
+                        while (reader.Read())
+                        {
+                            int idCandidat = reader.GetInt32(0);
+                            string nomCandidat = reader.GetString(1);
+                            string prenomsCandidat = reader.GetString(2);
+                            int numerosCandidat = reader.GetInt32(3);
+                            candidats.Add(new KeyValuePair<string, int>($"Num: {numerosCandidat}   {nomCandidat}", idCandidat));
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Erreur: " + ex.Message);
+            }
+
+            return candidats;
+        }
+
+        //Charger les candidats dans la combobox
+        public void ChargerCandidatsDansComboBox(ComboBox comboBox)
+        {
+            comboBox.Items.Clear();
+
+            List<KeyValuePair<string, int>> candidats = GetCandidats();
+            foreach (KeyValuePair<string, int> candidat in candidats)
+            {
+                comboBox.Items.Add(candidat);
+            }
+        }
+
+        //Affiche image
+        public string afficheimage(int id_candidat)
+        {
+            string etat = "";
+            string image = "";
+            Connexion conn = new Connexion();
+            try
+            {
+                using (MySqlConnection connexion = conn.GetConnection())
+                {
+                    connexion.Open();
+                    string sql = "SELECT image FROM candidat where id_candidat = @id";
+
+
+                    MySqlCommand command = new MySqlCommand(sql, connexion);
+                    command.Parameters.AddWithValue("@id", id_candidat);
+
+                    MySqlDataReader reader = command.ExecuteReader();
+
+                    while (reader.Read())
+                    {
+                        image = reader[0].ToString();
+                    }
+                    reader.Close();
+                }
+                etat = "reussi";
+            }
+            catch (Exception ex)
+            {
+                etat = "erreur "+ex.Message;
+            }
+            return image;
         }
     }
 }

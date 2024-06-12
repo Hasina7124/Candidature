@@ -29,6 +29,8 @@
         private void InitializeComponent()
         {
             this.conteneur = new System.Windows.Forms.Panel();
+            this.quitter = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             this.retour = new System.Windows.Forms.Button();
             this.modification = new System.Windows.Forms.Button();
             this.politique = new System.Windows.Forms.TextBox();
@@ -53,8 +55,6 @@
             this.label18 = new System.Windows.Forms.Label();
             this.parcourir = new System.Windows.Forms.Button();
             this.image = new System.Windows.Forms.PictureBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.quitter = new System.Windows.Forms.Button();
             this.conteneur.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.image)).BeginInit();
             this.SuspendLayout();
@@ -93,6 +93,26 @@
             this.conteneur.Name = "conteneur";
             this.conteneur.Size = new System.Drawing.Size(862, 325);
             this.conteneur.TabIndex = 47;
+            // 
+            // quitter
+            // 
+            this.quitter.Location = new System.Drawing.Point(692, 281);
+            this.quitter.Margin = new System.Windows.Forms.Padding(2);
+            this.quitter.Name = "quitter";
+            this.quitter.Size = new System.Drawing.Size(124, 33);
+            this.quitter.TabIndex = 27;
+            this.quitter.Text = "Quitter";
+            this.quitter.UseVisualStyleBackColor = true;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(698, 23);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(122, 24);
+            this.label1.TabIndex = 26;
+            this.label1.Text = "Modification";
             // 
             // retour
             // 
@@ -319,6 +339,7 @@
             // 
             // image
             // 
+            this.image.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.image.Location = new System.Drawing.Point(22, 23);
             this.image.Margin = new System.Windows.Forms.Padding(2);
             this.image.Name = "image";
@@ -326,26 +347,6 @@
             this.image.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.image.TabIndex = 0;
             this.image.TabStop = false;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(698, 23);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(122, 24);
-            this.label1.TabIndex = 26;
-            this.label1.Text = "Modification";
-            // 
-            // quitter
-            // 
-            this.quitter.Location = new System.Drawing.Point(692, 281);
-            this.quitter.Margin = new System.Windows.Forms.Padding(2);
-            this.quitter.Name = "quitter";
-            this.quitter.Size = new System.Drawing.Size(124, 33);
-            this.quitter.TabIndex = 27;
-            this.quitter.Text = "Quitter";
-            this.quitter.UseVisualStyleBackColor = true;
             // 
             // ModificationCandidats
             // 

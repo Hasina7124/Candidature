@@ -1,5 +1,4 @@
-﻿using Candidature.entité;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -11,30 +10,26 @@ using System.Windows.Forms;
 
 namespace Candidature
 {
-    public partial class InsertionBureauVote : Form
+    public partial class MenuBV : Form
     {
-        public InsertionBureauVote()
+        public MenuBV()
         {
             InitializeComponent();
         }
 
-        private void insertion_Click(object sender, EventArgs e)
+        private void insertionbureauvote_Click(object sender, EventArgs e)
         {
-            string etat = "";
-            BureauVote vote = new BureauVote();
+            Navigation navigation = new Navigation(new InsertionBureauVote(), conteneur);
+        }
 
-            vote.nom = nom.Text;
-            vote.adresse = adresse.Text;
-            vote.ville = ville.Text;
-            vote.region = region.Text;
-
-            etat = vote.InsertionBv();
-            MessageBox.Show(etat);
+        private void insertionvote_Click(object sender, EventArgs e)
+        {
+            Navigation navigation = new Navigation(new InsertionVote(), conteneur);
         }
 
         private void retour_Click(object sender, EventArgs e)
         {
-            Navigation navigation = new Navigation(new MenuBV(), conteneur);
+            Navigation navigation = new Navigation(new Acceuil(), conteneur);
         }
 
         private void quitter_Click(object sender, EventArgs e)

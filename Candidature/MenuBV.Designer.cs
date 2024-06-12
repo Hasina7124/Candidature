@@ -1,6 +1,6 @@
 ﻿namespace Candidature
 {
-    partial class CandidatForm
+    partial class MenuBV
     {
         /// <summary>
         /// Required designer variable.
@@ -30,89 +30,90 @@
         {
             this.conteneur = new System.Windows.Forms.Panel();
             this.retour = new System.Windows.Forms.Button();
-            this.Quitter = new System.Windows.Forms.Button();
-            this.listecandidat = new System.Windows.Forms.Button();
-            this.insertion = new System.Windows.Forms.Button();
+            this.insertionvote = new System.Windows.Forms.Button();
+            this.insertionbureauvote = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
+            this.quitter = new System.Windows.Forms.Button();
             this.conteneur.SuspendLayout();
             this.SuspendLayout();
             // 
             // conteneur
             // 
+            this.conteneur.Controls.Add(this.quitter);
             this.conteneur.Controls.Add(this.retour);
-            this.conteneur.Controls.Add(this.Quitter);
-            this.conteneur.Controls.Add(this.listecandidat);
-            this.conteneur.Controls.Add(this.insertion);
+            this.conteneur.Controls.Add(this.insertionvote);
+            this.conteneur.Controls.Add(this.insertionbureauvote);
             this.conteneur.Controls.Add(this.label1);
             this.conteneur.Dock = System.Windows.Forms.DockStyle.Fill;
             this.conteneur.Location = new System.Drawing.Point(0, 0);
             this.conteneur.Margin = new System.Windows.Forms.Padding(2);
             this.conteneur.Name = "conteneur";
             this.conteneur.Size = new System.Drawing.Size(862, 325);
-            this.conteneur.TabIndex = 1;
+            this.conteneur.TabIndex = 3;
             // 
             // retour
             // 
-            this.retour.Location = new System.Drawing.Point(31, 287);
+            this.retour.Location = new System.Drawing.Point(43, 281);
             this.retour.Margin = new System.Windows.Forms.Padding(2);
             this.retour.Name = "retour";
-            this.retour.Size = new System.Drawing.Size(121, 27);
-            this.retour.TabIndex = 4;
+            this.retour.Size = new System.Drawing.Size(124, 33);
+            this.retour.TabIndex = 3;
             this.retour.Text = "Retour";
             this.retour.UseVisualStyleBackColor = true;
+            this.retour.Click += new System.EventHandler(this.retour_Click);
             // 
-            // Quitter
+            // insertionvote
             // 
-            this.Quitter.Location = new System.Drawing.Point(710, 287);
-            this.Quitter.Margin = new System.Windows.Forms.Padding(2);
-            this.Quitter.Name = "Quitter";
-            this.Quitter.Size = new System.Drawing.Size(121, 27);
-            this.Quitter.TabIndex = 3;
-            this.Quitter.Text = "Quitter";
-            this.Quitter.UseVisualStyleBackColor = true;
+            this.insertionvote.Location = new System.Drawing.Point(377, 191);
+            this.insertionvote.Margin = new System.Windows.Forms.Padding(2);
+            this.insertionvote.Name = "insertionvote";
+            this.insertionvote.Size = new System.Drawing.Size(121, 45);
+            this.insertionvote.TabIndex = 2;
+            this.insertionvote.Text = "Insertion de Vote";
+            this.insertionvote.UseVisualStyleBackColor = true;
+            this.insertionvote.Click += new System.EventHandler(this.insertionvote_Click);
             // 
-            // listecandidat
+            // insertionbureauvote
             // 
-            this.listecandidat.Location = new System.Drawing.Point(377, 190);
-            this.listecandidat.Margin = new System.Windows.Forms.Padding(2);
-            this.listecandidat.Name = "listecandidat";
-            this.listecandidat.Size = new System.Drawing.Size(121, 45);
-            this.listecandidat.TabIndex = 2;
-            this.listecandidat.Text = "Liste candidat";
-            this.listecandidat.UseVisualStyleBackColor = true;
-            this.listecandidat.Click += new System.EventHandler(this.listecandidat_Click);
-            // 
-            // insertion
-            // 
-            this.insertion.Location = new System.Drawing.Point(377, 112);
-            this.insertion.Margin = new System.Windows.Forms.Padding(2);
-            this.insertion.Name = "insertion";
-            this.insertion.Size = new System.Drawing.Size(121, 45);
-            this.insertion.TabIndex = 1;
-            this.insertion.Text = "Insérer";
-            this.insertion.UseVisualStyleBackColor = true;
-            this.insertion.Click += new System.EventHandler(this.insertion_Click);
+            this.insertionbureauvote.Location = new System.Drawing.Point(343, 119);
+            this.insertionbureauvote.Margin = new System.Windows.Forms.Padding(2);
+            this.insertionbureauvote.Name = "insertionbureauvote";
+            this.insertionbureauvote.Size = new System.Drawing.Size(187, 45);
+            this.insertionbureauvote.TabIndex = 1;
+            this.insertionbureauvote.Text = "Insertion Bureau de  Vote";
+            this.insertionbureauvote.UseVisualStyleBackColor = true;
+            this.insertionbureauvote.Click += new System.EventHandler(this.insertionbureauvote_Click);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Mongolian Baiti", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(284, 42);
+            this.label1.Location = new System.Drawing.Point(267, 42);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(327, 29);
+            this.label1.Size = new System.Drawing.Size(358, 29);
             this.label1.TabIndex = 0;
-            this.label1.Text = "INSERTION CANDIDAT";
+            this.label1.Text = "MENU BUREAU DE VOTE";
             // 
-            // CandidatForm
+            // quitter
+            // 
+            this.quitter.Location = new System.Drawing.Point(692, 281);
+            this.quitter.Name = "quitter";
+            this.quitter.Size = new System.Drawing.Size(124, 33);
+            this.quitter.TabIndex = 4;
+            this.quitter.Text = "Quitter";
+            this.quitter.UseVisualStyleBackColor = true;
+            this.quitter.Click += new System.EventHandler(this.quitter_Click);
+            // 
+            // MenuBV
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(862, 325);
             this.Controls.Add(this.conteneur);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "CandidatForm";
-            this.Text = "Acceuil";
+            this.Name = "MenuBV";
+            this.Text = "MenuBV";
             this.conteneur.ResumeLayout(false);
             this.conteneur.PerformLayout();
             this.ResumeLayout(false);
@@ -122,10 +123,10 @@
         #endregion
 
         private System.Windows.Forms.Panel conteneur;
-        private System.Windows.Forms.Button listecandidat;
-        private System.Windows.Forms.Button insertion;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button Quitter;
         private System.Windows.Forms.Button retour;
+        private System.Windows.Forms.Button insertionvote;
+        private System.Windows.Forms.Button insertionbureauvote;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button quitter;
     }
 }

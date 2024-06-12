@@ -19,12 +19,22 @@ namespace Candidature
 
         private void candidat_Click(object sender, EventArgs e)
         {
-            Navigation navigation = new Navigation(new CandidatForm(), conteneur);
+            Navigation navigation = new Navigation(new MenuCandidats(), conteneur);
         }
 
         private void listecandidat_Click(object sender, EventArgs e)
         {
-            Navigation navigation = new Navigation(new InsertionBureauVote(), conteneur);
+            Navigation navigation = new Navigation(new MenuBV(), conteneur);
+        }
+
+        private void quitter_Click(object sender, EventArgs e)
+        {
+            Quitter quitter = new Quitter();
+            Form Mere = quitter.FindTopLevelForm(this);
+            if (Mere != null)
+            {
+                Mere.Close();
+            }
         }
     }
 }

@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.conteneur = new System.Windows.Forms.Panel();
+            this.quitter = new System.Windows.Forms.Button();
             this.label10 = new System.Windows.Forms.Label();
             this.retour = new System.Windows.Forms.Button();
             this.insertion = new System.Windows.Forms.Button();
@@ -54,7 +55,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.parcourir = new System.Windows.Forms.Button();
             this.image = new System.Windows.Forms.PictureBox();
-            this.quitter = new System.Windows.Forms.Button();
             this.conteneur.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.image)).BeginInit();
             this.SuspendLayout();
@@ -93,6 +93,17 @@
             this.conteneur.Name = "conteneur";
             this.conteneur.Size = new System.Drawing.Size(862, 325);
             this.conteneur.TabIndex = 0;
+            // 
+            // quitter
+            // 
+            this.quitter.Location = new System.Drawing.Point(692, 281);
+            this.quitter.Margin = new System.Windows.Forms.Padding(2);
+            this.quitter.Name = "quitter";
+            this.quitter.Size = new System.Drawing.Size(124, 33);
+            this.quitter.TabIndex = 26;
+            this.quitter.Text = "Quitter";
+            this.quitter.UseVisualStyleBackColor = true;
+            this.quitter.Click += new System.EventHandler(this.quitter_Click);
             // 
             // label10
             // 
@@ -329,23 +340,14 @@
             // 
             // image
             // 
-            this.image.Location = new System.Drawing.Point(22, 23);
+            this.image.Image = global::Candidature.Properties.Resources.defaut;
+            this.image.Location = new System.Drawing.Point(22, 11);
             this.image.Margin = new System.Windows.Forms.Padding(2);
             this.image.Name = "image";
-            this.image.Size = new System.Drawing.Size(158, 131);
+            this.image.Size = new System.Drawing.Size(158, 143);
             this.image.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.image.TabIndex = 0;
             this.image.TabStop = false;
-            // 
-            // quitter
-            // 
-            this.quitter.Location = new System.Drawing.Point(692, 281);
-            this.quitter.Margin = new System.Windows.Forms.Padding(2);
-            this.quitter.Name = "quitter";
-            this.quitter.Size = new System.Drawing.Size(124, 33);
-            this.quitter.TabIndex = 26;
-            this.quitter.Text = "Quitter";
-            this.quitter.UseVisualStyleBackColor = true;
             // 
             // InsertionCandidat
             // 
