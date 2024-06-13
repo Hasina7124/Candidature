@@ -20,6 +20,15 @@ namespace Candidature
 
         private void insertion_Click(object sender, EventArgs e)
         {
+            if (string.IsNullOrWhiteSpace(nom.Text) ||
+                string.IsNullOrWhiteSpace(adresse.Text) ||
+                string.IsNullOrWhiteSpace(ville.Text) ||
+                string.IsNullOrWhiteSpace(region.Text))
+            {
+                MessageBox.Show("Tous les champs doivent être remplis.", "Erreur", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
             string etat = "";
             BureauVote vote = new BureauVote();
 

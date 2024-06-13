@@ -15,6 +15,7 @@ namespace Candidature
     {
         public int idcandidats;
         public int idBureauVote;
+
         public InsertionVote()
         {
             InitializeComponent();
@@ -38,12 +39,11 @@ namespace Candidature
 
         private void nombureauvote_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if(nombureauvote.SelectedItem != null)
+            if (nombureauvote.SelectedItem != null)
             {
                 KeyValuePair<string, int> selectedItem = (KeyValuePair<string, int>)nombureauvote.SelectedItem;
                 idBureauVote = selectedItem.Value;
             }
-            
         }
 
         private void nomcandidats_SelectedIndexChanged(object sender, EventArgs e)
@@ -74,6 +74,22 @@ namespace Candidature
 
         private void insertion_Click(object sender, EventArgs e)
         {
+            //Vérification des champs vides et valeurs incorrectes
+            if (nombureauvote.SelectedItem == null ||
+                nomcandidats.SelectedItem == null ||
+                string.IsNullOrWhiteSpace(nbvote.Text))
+            {
+                MessageBox.Show("Tous les champs doivent être remplis.", "Erreur", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            //Vérification que nbvote est un entier positif
+            if (!int.TryParse(nbvote.Text, out int nbVoteValue) || nbVoteValue < 0)
+            {
+                MessageBox.Show("Le nombre de votes doit être un entier positif.", "Erreur", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
             string etat = insertionVote();
             MessageBox.Show(etat);
         }
