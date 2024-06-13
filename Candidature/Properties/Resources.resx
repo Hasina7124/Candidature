@@ -118,7 +118,37 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="madagascar-balloon1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\madagascar-balloon1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ramadan-madagascar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ramadan-madagascar.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="blanc" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\blanc.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="madagascar-metallic-flag-textured-flag-grunge-flag" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\madagascar-metallic-flag-textured-flag-grunge-flag.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="madagascar-balloon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\madagascar-balloon.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="closeup-shot-waving-flag-madagascar-with-interesting-textures" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\closeup-shot-waving-flag-madagascar-with-interesting-textures.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="rouge" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\rouge.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="vert" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\vert.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="green-grass-wallpaper-fresh-green-grass-wallpapers-wallpaper-cave" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\green-grass-wallpaper-fresh-green-grass-wallpapers-wallpaper-cave.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="defaut" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\defaut.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="madagascar-flag-wrinkled-dark-background-3d-render" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\madagascar-flag-wrinkled-dark-background-3d-render.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

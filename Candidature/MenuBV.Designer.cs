@@ -29,17 +29,19 @@
         private void InitializeComponent()
         {
             this.conteneur = new System.Windows.Forms.Panel();
+            this.resultat = new System.Windows.Forms.Button();
             this.quitter = new System.Windows.Forms.Button();
             this.retour = new System.Windows.Forms.Button();
             this.insertionvote = new System.Windows.Forms.Button();
             this.insertionbureauvote = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.resultat = new System.Windows.Forms.Button();
             this.conteneur.SuspendLayout();
             this.SuspendLayout();
             // 
             // conteneur
             // 
+            this.conteneur.BackgroundImage = global::Candidature.Properties.Resources.rouge;
+            this.conteneur.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.conteneur.Controls.Add(this.resultat);
             this.conteneur.Controls.Add(this.quitter);
             this.conteneur.Controls.Add(this.retour);
@@ -52,6 +54,17 @@
             this.conteneur.Name = "conteneur";
             this.conteneur.Size = new System.Drawing.Size(862, 325);
             this.conteneur.TabIndex = 3;
+            // 
+            // resultat
+            // 
+            this.resultat.Location = new System.Drawing.Point(377, 207);
+            this.resultat.Margin = new System.Windows.Forms.Padding(2);
+            this.resultat.Name = "resultat";
+            this.resultat.Size = new System.Drawing.Size(121, 45);
+            this.resultat.TabIndex = 5;
+            this.resultat.Text = "Resultat";
+            this.resultat.UseVisualStyleBackColor = true;
+            this.resultat.Click += new System.EventHandler(this.resultat_Click);
             // 
             // quitter
             // 
@@ -99,6 +112,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Mongolian Baiti", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(267, 42);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
@@ -106,17 +120,6 @@
             this.label1.Size = new System.Drawing.Size(358, 29);
             this.label1.TabIndex = 0;
             this.label1.Text = "MENU BUREAU DE VOTE";
-            // 
-            // resultat
-            // 
-            this.resultat.Location = new System.Drawing.Point(377, 207);
-            this.resultat.Margin = new System.Windows.Forms.Padding(2);
-            this.resultat.Name = "resultat";
-            this.resultat.Size = new System.Drawing.Size(121, 45);
-            this.resultat.TabIndex = 5;
-            this.resultat.Text = "Resultat";
-            this.resultat.UseVisualStyleBackColor = true;
-            this.resultat.Click += new System.EventHandler(this.resultat_Click);
             // 
             // MenuBV
             // 

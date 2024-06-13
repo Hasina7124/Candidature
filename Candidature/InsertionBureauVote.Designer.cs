@@ -46,6 +46,9 @@
             // 
             // conteneur
             // 
+            this.conteneur.BackColor = System.Drawing.Color.Transparent;
+            this.conteneur.BackgroundImage = global::Candidature.Properties.Resources.blanc;
+            this.conteneur.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.conteneur.Controls.Add(this.retour);
             this.conteneur.Controls.Add(this.quitter);
             this.conteneur.Controls.Add(this.label5);

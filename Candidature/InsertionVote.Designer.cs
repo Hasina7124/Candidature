@@ -31,6 +31,7 @@
             this.conteneur = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.label4 = new System.Windows.Forms.Label();
             this.quitter = new System.Windows.Forms.Button();
             this.retour = new System.Windows.Forms.Button();
             this.insertion = new System.Windows.Forms.Button();
@@ -51,7 +52,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
             this.conteneur.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -88,6 +88,8 @@
             // 
             // panel2
             // 
+            this.panel2.BackgroundImage = global::Candidature.Properties.Resources.rouge;
+            this.panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel2.Controls.Add(this.label4);
             this.panel2.Controls.Add(this.quitter);
             this.panel2.Controls.Add(this.retour);
@@ -106,6 +108,18 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(862, 325);
             this.panel2.TabIndex = 41;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Transparent;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.White;
+            this.label4.Location = new System.Drawing.Point(409, 68);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(126, 15);
+            this.label4.TabIndex = 49;
+            this.label4.Text = "Image du candidat";
             // 
             // quitter
             // 
@@ -150,9 +164,12 @@
             // label9
             // 
             this.label9.AutoSize = true;
+            this.label9.BackColor = System.Drawing.Color.Transparent;
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.ForeColor = System.Drawing.Color.White;
             this.label9.Location = new System.Drawing.Point(12, 233);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(94, 13);
+            this.label9.Size = new System.Drawing.Size(125, 15);
             this.label9.TabIndex = 44;
             this.label9.Text = "Nombre de vote(s)";
             // 
@@ -168,18 +185,24 @@
             // label8
             // 
             this.label8.AutoSize = true;
+            this.label8.BackColor = System.Drawing.Color.Transparent;
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.Color.White;
             this.label8.Location = new System.Drawing.Point(12, 147);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(54, 13);
+            this.label8.Size = new System.Drawing.Size(71, 15);
             this.label8.TabIndex = 42;
             this.label8.Text = "Candidats";
             // 
             // label7
             // 
             this.label7.AutoSize = true;
+            this.label7.BackColor = System.Drawing.Color.Transparent;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.Color.White;
             this.label7.Location = new System.Drawing.Point(12, 61);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(80, 13);
+            this.label7.Size = new System.Drawing.Size(103, 15);
             this.label7.TabIndex = 41;
             this.label7.Text = "Bureau de vote";
             // 
@@ -213,7 +236,9 @@
             // label6
             // 
             this.label6.AutoSize = true;
+            this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.White;
             this.label6.Location = new System.Drawing.Point(632, 23);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(185, 24);
@@ -289,15 +314,6 @@
             this.label5.Size = new System.Drawing.Size(185, 24);
             this.label5.TabIndex = 37;
             this.label5.Text = "Insértion des votes";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(425, 68);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(95, 13);
-            this.label4.TabIndex = 49;
-            this.label4.Text = "Image du candidat";
             // 
             // InsertionVote
             // 

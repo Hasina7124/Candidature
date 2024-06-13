@@ -61,6 +61,8 @@
             // 
             // conteneur
             // 
+            this.conteneur.BackgroundImage = global::Candidature.Properties.Resources.madagascar_metallic_flag_textured_flag_grunge_flag;
+            this.conteneur.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.conteneur.Controls.Add(this.quitter);
             this.conteneur.Controls.Add(this.label1);
             this.conteneur.Controls.Add(this.retour);
@@ -107,7 +109,9 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(698, 23);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(122, 24);
@@ -147,16 +151,20 @@
             // label10
             // 
             this.label10.AutoSize = true;
+            this.label10.BackColor = System.Drawing.Color.Transparent;
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.ForeColor = System.Drawing.Color.White;
             this.label10.Location = new System.Drawing.Point(359, 256);
             this.label10.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(76, 13);
+            this.label10.Size = new System.Drawing.Size(105, 15);
             this.label10.TabIndex = 21;
             this.label10.Text = "Partie politique";
             // 
             // autres
             // 
             this.autres.AutoSize = true;
+            this.autres.BackColor = System.Drawing.Color.Transparent;
             this.autres.Location = new System.Drawing.Point(178, 298);
             this.autres.Margin = new System.Windows.Forms.Padding(2);
             this.autres.Name = "autres";
@@ -164,11 +172,12 @@
             this.autres.TabIndex = 20;
             this.autres.TabStop = true;
             this.autres.Text = "Autres";
-            this.autres.UseVisualStyleBackColor = true;
+            this.autres.UseVisualStyleBackColor = false;
             // 
             // feminin
             // 
             this.feminin.AutoSize = true;
+            this.feminin.BackColor = System.Drawing.Color.Transparent;
             this.feminin.Location = new System.Drawing.Point(102, 298);
             this.feminin.Margin = new System.Windows.Forms.Padding(2);
             this.feminin.Name = "feminin";
@@ -176,21 +185,25 @@
             this.feminin.TabIndex = 19;
             this.feminin.TabStop = true;
             this.feminin.Text = "Feminin";
-            this.feminin.UseVisualStyleBackColor = true;
+            this.feminin.UseVisualStyleBackColor = false;
             // 
             // label11
             // 
             this.label11.AutoSize = true;
+            this.label11.BackColor = System.Drawing.Color.Transparent;
+            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.ForeColor = System.Drawing.Color.White;
             this.label11.Location = new System.Drawing.Point(20, 283);
             this.label11.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(31, 13);
+            this.label11.Size = new System.Drawing.Size(39, 15);
             this.label11.TabIndex = 18;
             this.label11.Text = "Sexe";
             // 
             // mascullin
             // 
             this.mascullin.AutoSize = true;
+            this.mascullin.BackColor = System.Drawing.Color.Transparent;
             this.mascullin.Location = new System.Drawing.Point(22, 298);
             this.mascullin.Margin = new System.Windows.Forms.Padding(2);
             this.mascullin.Name = "mascullin";
@@ -198,7 +211,7 @@
             this.mascullin.TabIndex = 17;
             this.mascullin.TabStop = true;
             this.mascullin.Text = "Mascullin";
-            this.mascullin.UseVisualStyleBackColor = true;
+            this.mascullin.UseVisualStyleBackColor = false;
             // 
             // cin
             // 
@@ -211,10 +224,13 @@
             // label12
             // 
             this.label12.AutoSize = true;
+            this.label12.BackColor = System.Drawing.Color.Transparent;
+            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.ForeColor = System.Drawing.Color.White;
             this.label12.Location = new System.Drawing.Point(359, 210);
             this.label12.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(70, 13);
+            this.label12.Size = new System.Drawing.Size(92, 15);
             this.label12.TabIndex = 15;
             this.label12.Text = "Numéros CIN";
             // 
@@ -229,10 +245,13 @@
             // label13
             // 
             this.label13.AutoSize = true;
+            this.label13.BackColor = System.Drawing.Color.Transparent;
+            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.ForeColor = System.Drawing.Color.White;
             this.label13.Location = new System.Drawing.Point(359, 166);
             this.label13.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(99, 13);
+            this.label13.Size = new System.Drawing.Size(133, 15);
             this.label13.TabIndex = 13;
             this.label13.Text = "Numéros téléphone";
             // 
@@ -247,10 +266,13 @@
             // label14
             // 
             this.label14.AutoSize = true;
+            this.label14.BackColor = System.Drawing.Color.Transparent;
+            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.ForeColor = System.Drawing.Color.White;
             this.label14.Location = new System.Drawing.Point(359, 122);
             this.label14.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(45, 13);
+            this.label14.Size = new System.Drawing.Size(58, 15);
             this.label14.TabIndex = 11;
             this.label14.Text = "Adresse";
             // 
@@ -265,10 +287,13 @@
             // label15
             // 
             this.label15.AutoSize = true;
+            this.label15.BackColor = System.Drawing.Color.Transparent;
+            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.ForeColor = System.Drawing.Color.White;
             this.label15.Location = new System.Drawing.Point(359, 77);
             this.label15.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(96, 13);
+            this.label15.Size = new System.Drawing.Size(126, 15);
             this.label15.TabIndex = 8;
             this.label15.Text = "Date de naissance";
             // 
@@ -283,10 +308,13 @@
             // label16
             // 
             this.label16.AutoSize = true;
+            this.label16.BackColor = System.Drawing.Color.Transparent;
+            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.ForeColor = System.Drawing.Color.White;
             this.label16.Location = new System.Drawing.Point(359, 36);
             this.label16.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(93, 13);
+            this.label16.Size = new System.Drawing.Size(124, 15);
             this.label16.TabIndex = 6;
             this.label16.Text = "Lieu de naissance";
             // 
@@ -301,10 +329,13 @@
             // label17
             // 
             this.label17.AutoSize = true;
+            this.label17.BackColor = System.Drawing.Color.Transparent;
+            this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label17.ForeColor = System.Drawing.Color.White;
             this.label17.Location = new System.Drawing.Point(20, 237);
             this.label17.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(48, 13);
+            this.label17.Size = new System.Drawing.Size(64, 15);
             this.label17.TabIndex = 4;
             this.label17.Text = "Prenoms";
             // 
@@ -319,10 +350,13 @@
             // label18
             // 
             this.label18.AutoSize = true;
+            this.label18.BackColor = System.Drawing.Color.Transparent;
+            this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label18.ForeColor = System.Drawing.Color.White;
             this.label18.Location = new System.Drawing.Point(20, 194);
             this.label18.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(29, 13);
+            this.label18.Size = new System.Drawing.Size(37, 15);
             this.label18.TabIndex = 2;
             this.label18.Text = "Nom";
             // 

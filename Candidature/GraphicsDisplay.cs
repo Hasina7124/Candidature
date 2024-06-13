@@ -24,5 +24,20 @@ namespace Candidature
             Resultats resultat = new Resultats();
             resultat.afficherresultatchart(affichecandidat);
         }
+
+        private void retour_Click(object sender, EventArgs e)
+        {
+            Navigation navigation = new Navigation(new Resultat(), conteneur);
+        }
+
+        private void quitter_Click(object sender, EventArgs e)
+        {
+            Quitter quitter = new Quitter();
+            Form Mere = quitter.FindTopLevelForm(this);
+            if (Mere != null)
+            {
+                Mere.Close();
+            }
+        }
     }
 }

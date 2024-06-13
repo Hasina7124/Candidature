@@ -240,5 +240,35 @@
   <ItemGroup>
     <None Include="Resources\defaut.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\closeup-shot-waving-flag-madagascar-with-interesting-textures.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\madagascar-balloon.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\green-grass-wallpaper-fresh-green-grass-wallpapers-wallpaper-cave.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\vert.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blanc.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rouge.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\madagascar-balloon1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ramadan-madagascar.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\madagascar-metallic-flag-textured-flag-grunge-flag.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\madagascar-flag-wrinkled-dark-background-3d-render.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

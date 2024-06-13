@@ -45,6 +45,8 @@
             // 
             // conteneur
             // 
+            this.conteneur.BackgroundImage = global::Candidature.Properties.Resources.blanc;
+            this.conteneur.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.conteneur.Controls.Add(this.imagecandidats);
             this.conteneur.Controls.Add(this.listcandidats);
             this.conteneur.Controls.Add(this.retour);
@@ -146,6 +148,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Mongolian Baiti", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(332, 20);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);

@@ -39,6 +39,7 @@
             // 
             // conteneur
             // 
+            this.conteneur.BackgroundImage = global::Candidature.Properties.Resources.madagascar_balloon;
             this.conteneur.Controls.Add(this.retour);
             this.conteneur.Controls.Add(this.Quitter);
             this.conteneur.Controls.Add(this.listecandidat);
@@ -98,8 +99,10 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Mongolian Baiti", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(359, 42);
+            this.label1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label1.Location = new System.Drawing.Point(356, 42);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(165, 29);

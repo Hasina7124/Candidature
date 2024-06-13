@@ -61,6 +61,8 @@
             // 
             // conteneur
             // 
+            this.conteneur.BackgroundImage = global::Candidature.Properties.Resources.vert;
+            this.conteneur.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.conteneur.Controls.Add(this.quitter);
             this.conteneur.Controls.Add(this.label10);
             this.conteneur.Controls.Add(this.retour);
@@ -108,7 +110,9 @@
             // label10
             // 
             this.label10.AutoSize = true;
+            this.label10.BackColor = System.Drawing.Color.Transparent;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.ForeColor = System.Drawing.Color.White;
             this.label10.Location = new System.Drawing.Point(641, 23);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(175, 24);
@@ -148,16 +152,21 @@
             // label9
             // 
             this.label9.AutoSize = true;
+            this.label9.BackColor = System.Drawing.Color.Transparent;
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.ForeColor = System.Drawing.Color.White;
             this.label9.Location = new System.Drawing.Point(359, 256);
             this.label9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(76, 13);
+            this.label9.Size = new System.Drawing.Size(105, 15);
             this.label9.TabIndex = 21;
             this.label9.Text = "Partie politique";
             // 
             // autres
             // 
             this.autres.AutoSize = true;
+            this.autres.BackColor = System.Drawing.Color.Transparent;
+            this.autres.ForeColor = System.Drawing.Color.White;
             this.autres.Location = new System.Drawing.Point(178, 298);
             this.autres.Margin = new System.Windows.Forms.Padding(2);
             this.autres.Name = "autres";
@@ -165,11 +174,13 @@
             this.autres.TabIndex = 20;
             this.autres.TabStop = true;
             this.autres.Text = "Autres";
-            this.autres.UseVisualStyleBackColor = true;
+            this.autres.UseVisualStyleBackColor = false;
             // 
             // feminin
             // 
             this.feminin.AutoSize = true;
+            this.feminin.BackColor = System.Drawing.Color.Transparent;
+            this.feminin.ForeColor = System.Drawing.Color.White;
             this.feminin.Location = new System.Drawing.Point(102, 298);
             this.feminin.Margin = new System.Windows.Forms.Padding(2);
             this.feminin.Name = "feminin";
@@ -177,21 +188,26 @@
             this.feminin.TabIndex = 19;
             this.feminin.TabStop = true;
             this.feminin.Text = "Feminin";
-            this.feminin.UseVisualStyleBackColor = true;
+            this.feminin.UseVisualStyleBackColor = false;
             // 
             // label8
             // 
             this.label8.AutoSize = true;
+            this.label8.BackColor = System.Drawing.Color.Transparent;
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.Color.White;
             this.label8.Location = new System.Drawing.Point(20, 283);
             this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(31, 13);
+            this.label8.Size = new System.Drawing.Size(39, 15);
             this.label8.TabIndex = 18;
             this.label8.Text = "Sexe";
             // 
             // mascullin
             // 
             this.mascullin.AutoSize = true;
+            this.mascullin.BackColor = System.Drawing.Color.Transparent;
+            this.mascullin.ForeColor = System.Drawing.Color.White;
             this.mascullin.Location = new System.Drawing.Point(22, 298);
             this.mascullin.Margin = new System.Windows.Forms.Padding(2);
             this.mascullin.Name = "mascullin";
@@ -199,7 +215,7 @@
             this.mascullin.TabIndex = 17;
             this.mascullin.TabStop = true;
             this.mascullin.Text = "Mascullin";
-            this.mascullin.UseVisualStyleBackColor = true;
+            this.mascullin.UseVisualStyleBackColor = false;
             // 
             // cin
             // 
@@ -212,10 +228,13 @@
             // label7
             // 
             this.label7.AutoSize = true;
+            this.label7.BackColor = System.Drawing.Color.Transparent;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.Color.White;
             this.label7.Location = new System.Drawing.Point(359, 210);
             this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(70, 13);
+            this.label7.Size = new System.Drawing.Size(92, 15);
             this.label7.TabIndex = 15;
             this.label7.Text = "Numéros CIN";
             // 
@@ -230,10 +249,13 @@
             // label6
             // 
             this.label6.AutoSize = true;
+            this.label6.BackColor = System.Drawing.Color.Transparent;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.White;
             this.label6.Location = new System.Drawing.Point(359, 166);
             this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(99, 13);
+            this.label6.Size = new System.Drawing.Size(133, 15);
             this.label6.TabIndex = 13;
             this.label6.Text = "Numéros téléphone";
             // 
@@ -248,10 +270,13 @@
             // label5
             // 
             this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.Color.Transparent;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.White;
             this.label5.Location = new System.Drawing.Point(359, 122);
             this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(45, 13);
+            this.label5.Size = new System.Drawing.Size(58, 15);
             this.label5.TabIndex = 11;
             this.label5.Text = "Adresse";
             // 
@@ -266,10 +291,13 @@
             // label4
             // 
             this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Transparent;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.White;
             this.label4.Location = new System.Drawing.Point(359, 77);
             this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(96, 13);
+            this.label4.Size = new System.Drawing.Size(126, 15);
             this.label4.TabIndex = 8;
             this.label4.Text = "Date de naissance";
             // 
@@ -284,10 +312,13 @@
             // label3
             // 
             this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.White;
             this.label3.Location = new System.Drawing.Point(359, 36);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(93, 13);
+            this.label3.Size = new System.Drawing.Size(124, 15);
             this.label3.TabIndex = 6;
             this.label3.Text = "Lieu de naissance";
             // 
@@ -302,10 +333,13 @@
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.White;
             this.label2.Location = new System.Drawing.Point(20, 237);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(48, 13);
+            this.label2.Size = new System.Drawing.Size(64, 15);
             this.label2.TabIndex = 4;
             this.label2.Text = "Prenoms";
             // 
@@ -320,10 +354,13 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(20, 194);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(29, 13);
+            this.label1.Size = new System.Drawing.Size(37, 15);
             this.label1.TabIndex = 2;
             this.label1.Text = "Nom";
             // 

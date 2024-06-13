@@ -63,9 +63,109 @@ namespace Candidature.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap blanc {
+            get {
+                object obj = ResourceManager.GetObject("blanc", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap closeup_shot_waving_flag_madagascar_with_interesting_textures {
+            get {
+                object obj = ResourceManager.GetObject("closeup-shot-waving-flag-madagascar-with-interesting-textures", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap defaut {
             get {
                 object obj = ResourceManager.GetObject("defaut", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap green_grass_wallpaper_fresh_green_grass_wallpapers_wallpaper_cave {
+            get {
+                object obj = ResourceManager.GetObject("green-grass-wallpaper-fresh-green-grass-wallpapers-wallpaper-cave", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap madagascar_balloon {
+            get {
+                object obj = ResourceManager.GetObject("madagascar-balloon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap madagascar_balloon1 {
+            get {
+                object obj = ResourceManager.GetObject("madagascar-balloon1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap madagascar_flag_wrinkled_dark_background_3d_render {
+            get {
+                object obj = ResourceManager.GetObject("madagascar-flag-wrinkled-dark-background-3d-render", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap madagascar_metallic_flag_textured_flag_grunge_flag {
+            get {
+                object obj = ResourceManager.GetObject("madagascar-metallic-flag-textured-flag-grunge-flag", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ramadan_madagascar {
+            get {
+                object obj = ResourceManager.GetObject("ramadan-madagascar", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap rouge {
+            get {
+                object obj = ResourceManager.GetObject("rouge", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap vert {
+            get {
+                object obj = ResourceManager.GetObject("vert", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
