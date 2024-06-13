@@ -45,30 +45,11 @@ namespace Candidature
                 int idCandidat = Convert.ToInt32(listcandidats.SelectedItems[0].Tag);
                 id = idCandidat;
 
-                Connexion conn = new Connexion();
-                try
-                {
-                    using (MySqlConnection connexion = conn.GetConnection())
-                    {
-                        connexion.Open();
-                        string sql = "SELECT image FROM candidat WHERE id_candidat=@id";
 
-                        MySqlCommand command = new MySqlCommand(sql, connexion);
-                        command.Parameters.AddWithValue("@id",id);
-                        MySqlDataReader reader = command.ExecuteReader();
-
-                        while (reader.Read())
-                        {
-                            pathimage = reader.GetString(0);
-                        }
-                        Image image = Image.FromFile(pathimage);
-                        imagecandidats.Image = image;
-                    }
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show("Erreur: " + ex.Message);
-                }
+                Candidats candidats = new Candidats();
+                pathimage = candidats.afficheimage(id);
+                Image image = Image.FromFile(pathimage);
+                imagecandidats.Image = image;
             }
         }
         

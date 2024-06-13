@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Candidature.entité;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -40,6 +41,11 @@ namespace Candidature
             {
                 Mere.Close();
             }
+        }
+
+        private void resultat_Click(object sender, EventArgs e)
+        {
+            Navigation navigation = new Navigation(new Resultat(), conteneur);
         }
     }
 }
